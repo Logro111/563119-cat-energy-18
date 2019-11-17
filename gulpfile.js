@@ -10,6 +10,7 @@ var server = require("browser-sync").create();
 
 gulp.task("css", function () {
   return gulp.src("source/sass/style.scss")
+    .pipe(sass ({includePaths: require("node-normalize-scss").includePaths}))
     .pipe(plumber())
     .pipe(sourcemap.init())
     .pipe(sass())
