@@ -1,0 +1,25 @@
+.location__description {
+  margin-bottom: 26px;
+  background-color: #ffffff;
+}
+
+.location__headline,
+.location__address {
+  margin: 0;
+}
+
+.location__headline {
+  font-weight: normal;
+
+  @include font(16px, 20px);
+  @include Oswald-font;
+  text-transform: uppercase;
+}
+
+.location__address {
+  @include font(14px, 20px);
+}
+
+.location__map {
+  border: none;
+}
