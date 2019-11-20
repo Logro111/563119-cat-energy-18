@@ -3,6 +3,9 @@
   padding: 10px 0;
 
   font-size: 16px;
+
+  @include Oswald-font;
+
   line-height: 20px;
   text-align: center;
   color: #ffffff;

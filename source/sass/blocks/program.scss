@@ -14,7 +14,9 @@
 
   @include font(24px, 37px);
   @include Oswald-font;
+
   text-transform: uppercase;
+  color: #111111;
 }
 
 .program__description {
@@ -25,7 +27,7 @@
 .program__link {
   @include font(16px, 16px);
   @include Oswald-font;
-  color: #000000;
+  color: #111111;
 
   @include link;
 }

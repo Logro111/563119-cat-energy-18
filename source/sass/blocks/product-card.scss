@@ -1,0 +1,23 @@
+.product-card {
+  padding-bottom: 24px;
+
+  border: 1px solid #ededed;
+  border-bottom: none;
+
+  &:last-child {
+    border-bottom: 1px solid #ededed;
+  }
+}
+
+.product-card__product-link {
+  @include Oswald-font;
+  @include link;
+
+  color: #111111;
+}
+
+.product-card__title {
+  font-weight: normal;
+
+  @include font(16px, 20px);
+}
