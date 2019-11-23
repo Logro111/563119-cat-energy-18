@@ -1,4 +1,6 @@
 .product-application {
+  padding: 0 $mobile-center;
+
   @include font(14px, 18px);
 }
 
@@ -7,13 +9,5 @@
 }
 
 .product-application__title {
-  margin: 0;
   margin-bottom: 30px;
-
-  font-weight: normal;
-
-  @include Oswald-font;
-  @include font(36px, 60px);
-
-  color: #111111;
 }

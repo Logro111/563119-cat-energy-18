@@ -2,15 +2,14 @@
   display: block;
   padding: 10px 0;
 
-  font-size: 16px;
-
+  @include font(16px, 20px);
   @include Oswald-font;
 
-  line-height: 20px;
   text-align: center;
   color: #ffffff;
   text-decoration: none;
   text-transform: uppercase;
 
-  background-color: #68b738;
+  border: none;
+  background-color: $leaf-green;
 }

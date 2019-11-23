@@ -1,7 +1,11 @@
 .page-footer {
-  background-color: #f2f2f2;
+  background-color: $light-grey;
 }
 
 .page-footer__logo-image {
   margin-bottom: 31px;
+}
+
+.page-footer__wrapper {
+  padding: 0 $mobile-center;
 }

@@ -1,7 +1,6 @@
 .location__description {
-  color: #111111;
-
   margin-bottom: 26px;
+  padding: 27px $mobile-center 26px;
 }
 
 .location__description--index {
@@ -18,6 +17,9 @@
 
   @include font(16px, 20px);
   @include Oswald-font;
+
+  color: $dark-text-color;
+
   text-transform: uppercase;
 }
 
@@ -27,4 +29,6 @@
 
 .location__map {
   border: none;
+  width: 100%;
+  max-width: 100%;
 }

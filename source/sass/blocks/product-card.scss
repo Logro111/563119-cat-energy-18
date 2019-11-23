@@ -13,7 +13,7 @@
   @include Oswald-font;
   @include link;
 
-  color: #111111;
+  color: $dark-text-color;
 }
 
 .product-card__title {

@@ -1,0 +1,10 @@
+.headlines {
+  margin: 0;
+
+  font-weight: normal;
+
+  @include font($headline-font-size, $headline-line-height);
+  @include Oswald-font;
+
+  color: $dark-text-color;
+}

@@ -1,5 +1,7 @@
 .promo {
-  font-family: "Oswald", "Arial", sans-serif;
+  padding: 0 6.25%;
+
+  @include Oswald-font;
   min-height: 305px;
 
   color: #ffffff;
@@ -16,8 +18,8 @@
   display: block;
 
   font-weight: normal;
-  font-size: 36px;
-  line-height: 36px;
+
+  @include font($headline-font-size, 36px);
 }
 
 .promo__link {

@@ -13,7 +13,8 @@
   @include Oswald-font;
   @include font (16px, 20px);
 
-  color: #111111;
+  color: $dark-text-color;
+
   text-align: center;
   text-transform: uppercase;
 }
@@ -25,7 +26,7 @@
 }
 
 .more-goods__show-all {
-  color: #444444;
+  color: $light-text-color;
 
-  background-color: #f2f2f2;
+  background-color: $light-grey;
 }
