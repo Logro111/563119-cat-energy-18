@@ -1,0 +1,4 @@
+@function percent-size ($size, $parent-size) {
+  $result: round(($size / $parent-size)*100000%);
+  @return ($result / 1000);
+}

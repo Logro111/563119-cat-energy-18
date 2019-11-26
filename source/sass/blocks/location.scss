@@ -1,4 +1,6 @@
 .location__description {
+  display: flex;
+  justify-content: space-between;
   margin-bottom: 26px;
   padding: 27px $mobile-center 26px;
 }
@@ -13,7 +15,9 @@
 }
 
 .location__headline {
+  max-width: 124px;
   font-weight: normal;
+  flex-shrink: 0;
 
   @include font(16px, 20px);
   @include Oswald-font;
@@ -24,6 +28,7 @@
 }
 
 .location__address {
+  max-width: 135px;
   @include font(14px, 20px);
 }
 

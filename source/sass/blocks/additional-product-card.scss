@@ -1,0 +1,24 @@
+.additional-product-card {
+  padding: 13px 0 17px 0;
+
+  @include font(14px, 14px);
+
+  border-top: 1px solid $pinkish-grey;
+
+  &:last-child {
+    border-bottom: 1px solid $pinkish-grey;
+  }
+}
+
+.additional-product-card__title {
+  margin-bottom: 11px;
+
+  @include font(16px, 16px);
+
+  color: $middle-text-color;
+  text-transform: uppercase;
+}
+
+.additional-product-card__features {
+  margin-bottom: 12px;
+}

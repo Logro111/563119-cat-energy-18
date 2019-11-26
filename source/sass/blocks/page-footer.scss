@@ -3,7 +3,9 @@
 }
 
 .page-footer__logo-image {
-  margin-bottom: 31px;
+  display: block;
+  margin: 0 auto 31px;
+  width: percent-size(128px, 280px);
 }
 
 .page-footer__wrapper {
