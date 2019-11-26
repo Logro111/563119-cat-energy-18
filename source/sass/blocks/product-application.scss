@@ -1,0 +1,13 @@
+.product-application {
+  padding: 0 $mobile-center;
+
+  @include font(14px, 18px);
+}
+
+.product-application__list {
+  @include lists-reset;
+}
+
+.product-application__title {
+  margin-bottom: 30px;
+}

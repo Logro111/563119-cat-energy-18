@@ -1,0 +1,34 @@
+.program {
+  padding: 39px 21px 22px;
+
+  @include font(14px, 18px);
+
+  background-color: $light-grey;
+}
+
+.program__title {
+  margin: 0;
+  margin-bottom: 36px;
+
+  font-weight: normal;
+
+  @include font(24px, 37px);
+  @include Oswald-font;
+
+  text-transform: uppercase;
+  color: $dark-text-color;
+}
+
+.program__description {
+  margin: 0;
+  margin-bottom: 44px;
+}
+
+.program__link {
+  @include font(16px, 16px);
+  @include Oswald-font;
+  color: $dark-text-color;
+
+
+  @include link;
+}

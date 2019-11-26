@@ -1,0 +1,32 @@
+.more-goods {
+  padding: 26px 0 24px 0;
+
+  border: 1px solid #ededed;
+  border-top: none;
+}
+
+.more-goods__headline {
+  display: block;
+
+  font-weight: normal;
+
+  @include Oswald-font;
+  @include font (16px, 20px);
+
+  color: $dark-text-color;
+
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.more-goods__description {
+  @include font(12px, 16px);
+
+  text-align: center;
+}
+
+.more-goods__show-all {
+  color: $light-text-color;
+
+  background-color: $light-grey;
+}

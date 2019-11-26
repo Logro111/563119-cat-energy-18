@@ -1,0 +1,7 @@
+.programs-overview {
+  padding: 0 $mobile-center;
+}
+
+.programs-overview__list {
+  @include lists-reset;
+}

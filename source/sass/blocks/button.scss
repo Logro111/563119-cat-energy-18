@@ -1,0 +1,15 @@
+.button {
+  display: block;
+  padding: 10px 0;
+
+  @include font(16px, 20px);
+  @include Oswald-font;
+
+  text-align: center;
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+
+  border: none;
+  background-color: $leaf-green;
+}

@@ -2,6 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Подбор программы</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
@@ -21,30 +22,38 @@
     </header>
     <main class="main-page">
       <div class="program-selection">
-        <h1 class="program-selection__title">Подбор программы</h1>
+        <h1 class="program-selection__title headlines">Подбор программы</h1>
         <p class="program-selection__description">
           Заполните анкету и мы подберем <br>
           программу питания для вашего кота
         </p>
         <form class="selection-form" action="https://echo.htmlacademy.ru" method="POST">
-          <fieldset>
+          <fieldset class="selection-form__field-group">
             <legend class="visually-hidden">Данные кота</legend>
-            <label for="cat-name"></label>
+            <label for="cat-name">Имя:*</label>
             <input class="selection-form__text-field" type="text" id="cat-name" name="cat-name" placeholder="Барсик">
-            <label for="cat-weight"></label>
+            <label for="cat-weight">Вес (кг):*</label>
             <input class="selection-form__text-field" type="text" id="cat-weight" name="cat-weight" placeholder="7">
-            <label for="cat-age"></label>
+            <label for="cat-age">Возраст (лет):</label>
             <input class="selection-form__text-field" type="text" id="cat-age" name="cat-age" placeholder="7">
           </fieldset>
-          <fieldset>
-            <input class="selection-form__radio" type="radio" id="losing-weight" name="program" value="losing-weight">
-            <label class="selection-form__radio-label" for="losing-weight">Похудение</label>
-            <input class="selection-form__radio" type="radio" id="mass-gain" name="program" value="mass-gain">
-            <label class="selection-form__radio-label" for="mass-gain">Набор массы</label>
-            <input class="selection-form__radio" type="radio" id="need-advice" name="program" value="need-advice">
-            <label class="selection-form__radio-label" for="need-advice">Не знаю (Нужен ваш совет)</label>
+          <fieldset class="selection-form__field-group">
+            <ul class="selection-form__radio-list">
+              <li>
+                <input class="selection-form__radio" type="radio" id="losing-weight" name="program" value="losing-weight">
+                <label class="selection-form__radio-label" for="losing-weight">Похудение</label>
+              </li>
+              <li>
+                <input class="selection-form__radio" type="radio" id="mass-gain" name="program" value="mass-gain">
+                <label class="selection-form__radio-label" for="mass-gain">Набор массы</label>
+              </li>
+              <li>
+                <input class="selection-form__radio" type="radio" id="need-advice" name="program" value="need-advice">
+                <label class="selection-form__radio-label" for="need-advice">Не знаю (Нужен ваш совет)</label>
+              </li>
+            </ul>
           </fieldset>
-          <fieldset>
+          <fieldset class="selection-form__field-group">
             <legend class="selection-form__fieldset-title">
               Контактные данные <br>
               (владельца кота)
@@ -54,28 +63,38 @@
             <label for="telephone">Телефон</label>
             <input class="selection-form__text-field" type="tel" id="telephone" name="telephone" placeholder="8 (960) 900-60-90">
           </fieldset>
-          <fieldset>
+          <fieldset class="selection-form__field-group">
             <legend class="selection-form__fieldset-title">Комментарий</legend>
             <textarea class="selection-form__comment" name="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
           </fieldset>
-          <fieldset>
+          <fieldset class="selection-form__field-group">
             <legend class="selection-form__fieldset-title">Дополнительно</legend>
-            <input class="selection-form__checkbox" type="checkbox" id="sweetener" name="weetener" checked>
-            <label class="selection-form__checkbox-label" for="sweetener">Сахарозаменитель</label>
-            <input class="selection-form__checkbox" type="checkbox" id="water" name="water">
-            <label class="selection-form__checkbox-label" for="water">Питьевая вода</label>
-            <input class="selection-form__checkbox" type="checkbox" id="milk" name="milk">
-            <label class="selection-form__checkbox-label" for="milk">Молоко</label>
-            <input class="selection-form__checkbox" type="checkbox" id="vitamins" name="vitamins">
-            <label class="selection-form__checkbox-label" for="vitamins">Витамины</label>
+            <ul class="selection-form__radio-list">
+              <li>
+                <input class="selection-form__checkbox" type="checkbox" id="sweetener" name="weetener" checked>
+                <label class="selection-form__checkbox-label" for="sweetener">Сахарозаменитель</label>
+              </li>
+              <li>
+                <input class="selection-form__checkbox" type="checkbox" id="water" name="water">
+                <label class="selection-form__checkbox-label" for="water">Питьевая вода</label>
+              </li>
+              <li>
+                <input class="selection-form__checkbox" type="checkbox" id="milk" name="milk">
+                <label class="selection-form__checkbox-label" for="milk">Молоко</label>
+              </li>
+              <li>
+                <input class="selection-form__checkbox" type="checkbox" id="vitamins" name="vitamins">
+                <label class="selection-form__checkbox-label" for="vitamins">Витамины</label>
+              </li>
+            </ul>
           </fieldset>
-          <button class="selection-form__submit" type="submit">Отправить заявку</button>
-          <small><sup>*</sup> — Обязательные поля</small>
-        </form>
+          <button class="selection-form__submit button" type="submit">Отправить заявку</button>
+          </form>
+          <small class="selection-form__small-print"><sup>*</sup> — Обязательные поля</small>
       </div>
     </main>
     <footer class="page-footer">
-      <div class="location">
+      <div class="location page-footer__location">
         <h2 class="visually-hidden">Наш адрес</h2>
         <div class="location__description">
           <strong class="location__headline">
@@ -89,18 +108,20 @@
             Санкт-Петербург
           </p>
         </div>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533268!2d30.320858716070596!3d59.938716481876156!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1573995069326!5m2!1sru!2sru"
-        width="600" height="450" allowfullscreen=""></iframe>
+        <iframe class="location__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533268!2d30.320858716070596!3d59.938716481876156!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1573995069326!5m2!1sru!2sru"
+        allowfullscreen=""></iframe>
       </div>
-      <img class="page-footer__logo-image" src="https://via.placeholder.com/150x150" alt="Магазин Cat Energy">
-      <ul class="page-footer__list social-list">
-        <li class="social-list__item"><a href=""><img src="https://via.placeholder.com/150x150" alt="Cat Energy во Вконтакте"></a></li>
-        <li class="social-list__item"><a href=""><img src="https://via.placeholder.com/150x150" alt="Cat Energy в Инстаграме"></a></li>
-        <li class="social-list__item"><a href=""><img src="https://via.placeholder.com/150x150" alt="Cat Energy в Фейсбуке"></a></li>
-      </ul>
-      <div class="page-footer__copyright copyright">
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-        <a href="https://htmlacademy.ru/intensive/adaptive"><img class="copyright__icon" src="https://via.placeholder.com/150x150" alt="HTML Academy"></a>
+      <div class="page-footer__wrapper">
+        <img class="page-footer__logo-image" src="https://via.placeholder.com/150x150" alt="Магазин Cat Energy">
+        <ul class="page-footer__list social-list">
+          <li class="social-list__item"><a href=""><img src="https://via.placeholder.com/150x150" alt="Cat Energy во Вконтакте"></a></li>
+          <li class="social-list__item"><a href=""><img src="https://via.placeholder.com/150x150" alt="Cat Energy в Инстаграме"></a></li>
+          <li class="social-list__item"><a href=""><img src="https://via.placeholder.com/150x150" alt="Cat Energy в Фейсбуке"></a></li>
+        </ul>
+        <div class="page-footer__copyright copyright">
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+          <a href="https://htmlacademy.ru/intensive/adaptive"><img class="copyright__icon" src="https://via.placeholder.com/150x150" alt="HTML Academy"></a>
+        </div>
       </div>
     </footer>
   </body>
