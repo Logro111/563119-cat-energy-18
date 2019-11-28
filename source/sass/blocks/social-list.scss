@@ -5,7 +5,7 @@
 
   @include lists-reset;
 
-  padding: 22px percent-size(82px, 280px) 21px percent-size(73px, 280px);
+  padding: 22px 29.286% 21px 26.071%;
 
   border-top: 1px solid #d9d9d9;
   border-bottom: 1px solid #d9d9d9;
@@ -16,17 +16,26 @@
 }
 
 .social-list__item--vk {
-  width: percent-size(22px, 125px);
+  width: 17.6%;
 }
 
 .social-list__item--inst {
-  width: percent-size(17px, 125px);
+  width: 13.6%;
 }
 
 .social-list__item--fb {
-  width: percent-size(10px, 125px);
+  width: 8%;
 }
 
 .social-list__image {
   width: 100%;
+}
+
+@media (min-width: $tablet-width) {
+  .social-list {
+    padding: 0;
+    width: 17.514%;
+
+    border: 0 none;
+  }
 }

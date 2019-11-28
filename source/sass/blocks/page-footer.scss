@@ -5,9 +5,28 @@
 .page-footer__logo-image {
   display: block;
   margin: 0 auto 31px;
-  width: percent-size(128px, 280px);
+  width: 45.714%;
 }
 
 .page-footer__wrapper {
   padding: 0 $mobile-center;
+}
+
+@media (min-width: $tablet-width) {
+  .page-footer__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 $tablet-center;
+  }
+
+  .page-footer__copyright {
+    display: flex;
+    padding: 0;
+  }
+
+  .page-footer__logo-image {
+    margin: 0;
+    width: 18.079%;
+  }
 }

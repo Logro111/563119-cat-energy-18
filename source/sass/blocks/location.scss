@@ -38,3 +38,9 @@
   width: 100%;
   max-width: 100%;
 }
+
+@media (min-width: $tablet-width) {
+  .location__description {
+    padding: 60px 9.245%;
+  }
+}

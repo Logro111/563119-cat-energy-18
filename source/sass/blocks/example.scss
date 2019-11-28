@@ -22,7 +22,7 @@
 }
 
 .example__result-list-wrapper {
-  width: percent-size(124px, 280px);
+  width: 44.286%;
 }
 
 .example__result {
@@ -62,4 +62,24 @@
   color: $dark-text-color;
 
   text-transform: uppercase;
+}
+
+@media (min-width: $tablet-width) {
+  .example {
+    padding: 50px $tablet-center;
+    background-color: #ffffff;
+  }
+
+  .example__results-list {
+    width: 51.695%;
+  }
+
+  .example__result-description {
+    background-color: #ffffff;
+  }
+
+  .example__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
 }

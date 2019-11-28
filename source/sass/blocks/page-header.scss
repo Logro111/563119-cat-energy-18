@@ -11,5 +11,23 @@
 
 .page-header__logo-image {
   display: block;
-  width: percent-size(191px, 280px);
+  width: 68.214%;
+}
+
+@media (min-width: $tablet-width) {
+  .page-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 24px $tablet-center;
+  }
+
+  .page-header__logo {
+    width: 24.576%;
+    padding: 0;
+    border: 0 none;
+  }
+
+  .page-header__logo-image {
+    width: 100%;
+  }
 }

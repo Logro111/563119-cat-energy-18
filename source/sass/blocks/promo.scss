@@ -28,3 +28,19 @@
 
   @include font(14px, 18px);
 }
+
+@media (min-width: $tablet-width) {
+  .promo {
+    display: flex;
+    flex-direction: column;
+    padding: 0 $tablet-center;
+
+    color: #000000;
+
+    background-image: none;
+  }
+
+  .promo__image {
+    order: 1;
+  }
+}

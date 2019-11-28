@@ -24,9 +24,9 @@
 .main-navigation__toggle {
   position: absolute;
   top: 23px;
-  right: percent-size(19px, 320px);
+  right: 5.938%;
 
-  width: percent-size(25px, 320px);
+  width: 7.813%;
   height: 19px;
 
   background-color: transparent;
@@ -34,4 +34,20 @@
   background-repeat: no-repeat;
 
   border: none;
+}
+
+@media (min-width: $tablet-width) {
+  .main-navigation__list {
+    display: flex;
+  }
+
+  .main-navigation__link {
+    padding: 16px 0 16px 0;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .main-navigation__toggle {
+    display: none;
+  }
 }
