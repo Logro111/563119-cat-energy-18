@@ -8,6 +8,7 @@
 
   background-image: url("../img/index-background-mobile@1x.jpg");
   background-repeat: no-repeat;
+  background-size: 100% auto;
 }
 
 .promo__description-item {
@@ -26,4 +27,20 @@
   padding: 11px 0;
 
   @include font(14px, 18px);
+}
+
+@media (min-width: $tablet-width) {
+  .promo {
+    display: flex;
+    flex-direction: column;
+    padding: 0 $tablet-center;
+
+    color: #000000;
+
+    background-image: none;
+  }
+
+  .promo__image {
+    order: 1;
+  }
 }

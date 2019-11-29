@@ -1,0 +1,44 @@
+.selection-form {
+  @include form-text;
+  color: $middle-text-color;
+}
+
+.selection-form__comment,
+.selection-form__text-field {
+  padding: 13px 14px 14px;
+
+  @include form-text;
+
+  color: $light-text-color;
+
+  border: 1px solid $pinkish-grey;
+
+  &::placeholder {
+    color: $light-text-color;
+  }
+}
+
+.selection-form__comment {
+  resize: none;
+}
+
+.selection-form__field-group {
+  padding: 23px 0;
+
+  border: none;
+
+  &:nth-child(1),
+  &:nth-child(2) {
+    border-bottom: 1px solid $white-five;
+  }
+}
+
+.selection-form__radio-list {
+  @include lists-reset;
+}
+
+.selection-form__small-print {
+  @include font(14px, 16px);
+
+  color: $light-text-color;
+}

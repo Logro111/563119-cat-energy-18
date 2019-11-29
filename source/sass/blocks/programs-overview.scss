@@ -5,3 +5,9 @@
 .programs-overview__list {
   @include lists-reset;
 }
+
+@media (min-width: $tablet-width) {
+  .programs-overview {
+    padding: 0 $tablet-center;
+  }
+}

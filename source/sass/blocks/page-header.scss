@@ -1,10 +1,33 @@
+.page-header {
+  position: relative;
+}
+
 .page-header__logo {
   display: block;
-  padding: 0 6.25%;
+  padding: 11px 6.25% 15px;
 
   border-bottom: 1px solid #e6e6e6;
 }
 
 .page-header__logo-image {
   display: block;
+  width: 68.214%;
+}
+
+@media (min-width: $tablet-width) {
+  .page-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 24px $tablet-center;
+  }
+
+  .page-header__logo {
+    width: 24.576%;
+    padding: 0;
+    border: 0 none;
+  }
+
+  .page-header__logo-image {
+    width: 100%;
+  }
 }

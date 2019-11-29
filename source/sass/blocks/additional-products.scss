@@ -1,0 +1,30 @@
+.additional-products {
+  padding: 29px $mobile-center 34px;
+}
+
+.additional-products__title {
+  margin-bottom: 34px;
+
+  @include font(24px, 24px);
+}
+
+.additional-products__list {
+  @include lists-reset;
+  margin-bottom: 39px;
+}
+
+.additional-products__gift {
+  min-height: 289px;
+
+  @include font(16px, 20px);
+
+  text-align: center;
+  color: #ffffff;
+
+  background-image: url("../img/gift-photo-mobile@1x.jpg");
+  background-repeat: no-repeat;
+}
+
+.additional-products__gift-description {
+  margin: 0;
+}

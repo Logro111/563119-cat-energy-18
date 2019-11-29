@@ -11,3 +11,14 @@
 .product-application__title {
   margin-bottom: 30px;
 }
+
+@media (min-width: $tablet-width) {
+  .product-application {
+    padding: 0 $tablet-center;
+  }
+
+  .product-application__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}

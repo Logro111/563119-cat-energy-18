@@ -1,0 +1,22 @@
+.slider__list {
+  @include lists-reset;
+}
+
+.slider__controls {
+  text-align: center;
+}
+
+.slider__control-label {
+  @include font(16px, 20px);
+  @include Oswald-font;
+
+  color: $dark-text-color;
+
+  text-transform: uppercase;
+}
+
+@media (min-width: $tablet-width) {
+  .slider {
+    background-color: $light-grey;
+  }
+}

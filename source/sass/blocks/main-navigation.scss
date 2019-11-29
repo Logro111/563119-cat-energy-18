@@ -20,3 +20,34 @@
 .main-navigation__list {
   @include lists-reset;
 }
+
+.main-navigation__toggle {
+  position: absolute;
+  top: 23px;
+  right: 5.938%;
+
+  width: 7.813%;
+  height: 19px;
+
+  background-color: transparent;
+  background-image: url("../img/icon-mobile-menu.svg");
+  background-repeat: no-repeat;
+
+  border: none;
+}
+
+@media (min-width: $tablet-width) {
+  .main-navigation__list {
+    display: flex;
+  }
+
+  .main-navigation__link {
+    padding: 16px 0 16px 0;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .main-navigation__toggle {
+    display: none;
+  }
+}

@@ -1,0 +1,11 @@
+.program-selection {
+  padding: 0 $mobile-center;
+}
+
+.program-selection__description {
+  @include font(14px, 18px);
+  @include Oswald-font;
+
+  color: $dark-text-color;
+  text-transform: uppercase;
+}
