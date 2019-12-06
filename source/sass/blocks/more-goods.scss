@@ -1,5 +1,5 @@
 .more-goods {
-  padding: 26px 0 24px 0;
+  padding: 26px $mobile-center 24px;
 
   border: 1px solid #ededed;
   border-top: none;
@@ -29,4 +29,11 @@
   color: $light-text-color;
 
   background-color: $light-grey;
+}
+
+@media (min-width: $tablet-width) {
+  .more-goods {
+    border: 1px solid $pinkish-grey;
+    border-bottom: 1px solid $pinkish-grey;
+  }
 }

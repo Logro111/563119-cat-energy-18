@@ -1,11 +1,11 @@
 .product-card {
-  padding-bottom: 24px;
+  padding: 0 $mobile-center 24px;
 
   border: 1px solid #ededed;
-  border-bottom: none;
+  border-top: none;
 
-  &:last-child {
-    border-bottom: 1px solid #ededed;
+  &:first-child {
+    border-top: 1px solid #ededed;
   }
 }
 
@@ -20,4 +20,32 @@
   font-weight: normal;
 
   @include font(16px, 20px);
+}
+
+@media (min-width: $tablet-width) {
+  .product-card {
+    width: 45.763%;
+    margin-top: 140px;
+    padding: 40px 0;
+
+    border: 0 none;
+
+    &:nth-child(-n+2) {
+      margin-top: 0;
+    }
+
+    &:first-child {
+      border-top: 0 none;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .product-card {
+    width: 20.082%;
+
+    &:nth-child(-n+4) {
+      margin-top: 0;
+    }
+  }
 }

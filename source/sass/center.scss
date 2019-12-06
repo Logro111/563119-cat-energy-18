@@ -1,0 +1,13 @@
+@media (min-width: $tablet-width) {
+  .center {
+    width: 92.188%;
+    max-width: 1220px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .center {
+    width: 84.723%;
+  }
+}

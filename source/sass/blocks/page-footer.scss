@@ -2,6 +2,10 @@
   background-color: $light-grey;
 }
 
+.page-footer__location {
+  margin-bottom: 39px;
+}
+
 .page-footer__logo-image {
   display: block;
   margin: 0 auto 31px;
@@ -17,7 +21,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 $tablet-center;
+    padding: 0;
   }
 
   .page-footer__copyright {
@@ -28,5 +32,11 @@
   .page-footer__logo-image {
     margin: 0;
     width: 18.079%;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-footer__wrapper {
+    padding: 0;
   }
 }

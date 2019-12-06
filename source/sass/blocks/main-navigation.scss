@@ -37,8 +37,16 @@
 }
 
 @media (min-width: $tablet-width) {
+  .main-navigation {
+    width: 62.006%;
+
+    @include font(18px, 25px);
+    @include Oswald-font;
+  }
+
   .main-navigation__list {
     display: flex;
+    justify-content: space-between;
   }
 
   .main-navigation__link {
@@ -49,5 +57,15 @@
 @media (min-width: $tablet-width) {
   .main-navigation__toggle {
     display: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-navigation {
+    width: 39.18%;
+  }
+
+  .main-navigation__list {
+    justify-content: space-between;
   }
 }

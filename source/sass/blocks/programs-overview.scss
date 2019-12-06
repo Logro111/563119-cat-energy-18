@@ -6,8 +6,27 @@
   @include lists-reset;
 }
 
+.programs-overview__item {
+  margin-bottom: 20px;
+
+  &:last-child {
+    margin: 0;
+  }
+}
+
 @media (min-width: $tablet-width) {
   .programs-overview {
-    padding: 0 $tablet-center;
+    padding: 0;
+  }
+}
+
+@media (min-width: 1440px) {
+  .programs-overview__list {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .programs-overview__item {
+    margin-bottom: 0;
   }
 }

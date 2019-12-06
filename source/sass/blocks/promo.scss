@@ -5,7 +5,6 @@
   min-height: 305px;
 
   color: #ffffff;
-
   background-image: url("../img/index-background-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-size: 100% auto;
@@ -17,7 +16,6 @@
 
 .promo__description-item--headline {
   display: block;
-
   font-weight: normal;
 
   @include font($headline-font-size, 36px);
@@ -31,16 +29,65 @@
 
 @media (min-width: $tablet-width) {
   .promo {
-    display: flex;
-    flex-direction: column;
-    padding: 0 $tablet-center;
+    padding: 0;
 
     color: #000000;
 
     background-image: none;
   }
 
+  .promo__description-item {
+    text-align: left;
+  }
+
+  .promo__container {
+    display: flex;
+    flex-direction: column;
+
+    padding: 0 26.563% 0 11.719%;
+  }
+
+  .promo__description-item--headline {
+    @include font(60px, 60px);
+  }
+
   .promo__image {
     order: 1;
+  }
+
+  .promo__link {
+    align-self: flex-start;
+    padding-right: 7.005%;
+    padding-left: 6.281%;
+  }
+}
+
+@media (min-width: 1440px) {
+  .promo {
+    position: relative;
+    display: flex;
+    height: 496px;
+    background-image: linear-gradient(to right, transparent 50%, #65a93a 50%);
+
+    &::before {
+      content: "";
+      display: block;
+      background-image: url("../img/index-background-desktop@1x.jpg");
+      background-size: 100% 100%;
+      width: 720px;
+      min-height: 696px;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      z-index: 1;
+    }
+  }
+
+  .promo__container {
+    position: relative;
+    display: flex;
+    z-index: 2;
+    flex-direction: column;
+    padding: 0 59.099% 0 6.804%;
   }
 }

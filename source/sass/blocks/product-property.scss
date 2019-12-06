@@ -1,3 +1,19 @@
 .product-property__description {
   margin: 0;
 }
+
+@media (min-width: $tablet-width) {
+  .product-property {
+    width: 45.904%;
+    padding-right: 11.3%;
+
+    @include font(16px, 24px);
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .product-property {
+    width: 20.164%;
+    padding: 0;
+  }
+}
