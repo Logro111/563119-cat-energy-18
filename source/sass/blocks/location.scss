@@ -5,7 +5,7 @@
   padding: 27px $mobile-center 26px;
 }
 
-.location__description--index {
+.location--index {
   background-color: #ffffff;
 }
 
@@ -34,6 +34,7 @@
 }
 
 .location__map {
+  display: block;
   border: none;
   width: 100%;
   max-width: 100%;
@@ -41,6 +42,38 @@
 
 @media (min-width: $tablet-width) {
   .location__description {
-    padding: 60px 9.245%;
+    padding: 60px 5.791%;
+  }
+
+  .location__address {
+    text-align: right;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .location {
+    position: relative;
+  }
+
+  .location__description {
+    width: 39.584%;
+    padding: 60px 0;
+    max-width: 570px;
+    position: absolute;
+    background-color: #ffffff;
+  }
+
+  .location__address {
+    padding-right: 15.769%;
+    max-width: 100%;
+  }
+
+  .location__headline {
+    padding-left: 13.333%;
+    max-width: 100%;
+  }
+
+  .location__map {
+    min-height: 400px;
   }
 }

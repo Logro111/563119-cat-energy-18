@@ -32,3 +32,9 @@
 
   @include link;
 }
+
+@media (min-width: $desktop-width) {
+  .program {
+    width: 46.722%;
+  }
+}

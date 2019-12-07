@@ -1,17 +1,27 @@
 .copyright {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   padding: 22px 0 28px 0;
-  width: 44.286%;
+}
+
+.copyright__link {
+  text-decoration: none;
+  color: $light-text-color;
+}
+
+.copyright__icon-contents {
+  fill: $icon-color;
 }
 
 @media (min-width: $tablet-width) {
   .copyright {
     width: 22.881%;
     justify-content: space-between;
-    align-items: center;
     padding: 0;
   }
 
-  .copyright svg {
+  .copyright__icon {
     display: block;
   }
 }

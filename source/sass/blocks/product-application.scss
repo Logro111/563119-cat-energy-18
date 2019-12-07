@@ -8,17 +8,26 @@
   @include lists-reset;
 }
 
+.product-application__item {
+  margin-bottom: 28px;
+
+  &:last-child {
+    margin: 0;
+  }
+}
+
 .product-application__title {
   margin-bottom: 30px;
 }
 
 @media (min-width: $tablet-width) {
   .product-application {
-    padding: 0 $tablet-center;
+    padding: 0;
   }
 
   .product-application__list {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
   }
 }

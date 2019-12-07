@@ -15,10 +15,10 @@
 }
 
 @media (min-width: $tablet-width) {
-  .page-header {
+  .page-header__wrapper {
     display: flex;
     justify-content: space-between;
-    padding: 24px $tablet-center;
+    padding: 24px 0;
   }
 
   .page-header__logo {
@@ -29,5 +29,15 @@
 
   .page-header__logo-image {
     width: 100%;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .header--index {
+    background-image: linear-gradient(to right, transparent 50%, #65a93a 50%);
+  }
+
+  .main-navigation {
+    z-index: 2;
   }
 }
