@@ -1,4 +1,4 @@
-.program-selection__description {
+.program-selection {
   @include font(14px, 18px);
   @include Oswald-font;
 
@@ -13,9 +13,22 @@
 @media (min-width: $tablet-width) {
   .program-selection {
     padding: 0;
+
+    @include font(20px, 20px);
   }
 
   .program-selection__description-wrapper {
+    padding: 0;
+  }
+
+  .program-selection__description {
+    line-height: 30px;
+    padding: 0 5.226% 0 5.65%;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .program-selection__description {
     padding: 0;
   }
 }

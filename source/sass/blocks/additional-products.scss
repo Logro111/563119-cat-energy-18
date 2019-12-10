@@ -23,8 +23,48 @@
 
   background-image: url("../img/gift-photo-mobile@1x.jpg");
   background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0 70%;
 }
 
 .additional-products__gift-description {
   margin: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .additional-products {
+    padding: 0;
+  }
+
+  .additional-products__item {
+    margin-bottom: -1px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .additional-products__gift {
+    min-height: 200px;
+
+    background-image: url("../img/gift-photo-tablet@1x.jpg");
+    background-size: cover;
+    background-position: 0 50%;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .additional-products__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .additional-products__list {
+    width: 73.361%;
+  }
+
+  .additional-products__gift {
+    width: 20.082%;
+    background-image: url("../img/gift-photo-desktop@1x.jpg");
+  }
 }

@@ -5,6 +5,7 @@
 
 .selection-form__wrapper {
   padding: 0 $mobile-center;
+  text-align: center;
 }
 
 .selection-form__field-group {
@@ -48,26 +49,100 @@
 
 .selection-form__small-print {
   @include font(14px, 16px);
+  text-transform: none;
 
   color: $light-text-color;
 }
 
+.selection-form__submit {
+  width: 100%;
+}
+
 @media (min-width: $tablet-width) {
+  .selection-form {
+    @include font(20px, 20px);
+  }
+
   .selection-form__field-group {
     padding: 23px 0;
   }
 
+  .selection-form__wrapper {
+    display: flex;
+    padding: 0;
+  }
+
+  .selection-form__wrapper,
+  .selection-form__cat-info,
+  .selection-form__field-group-wrapper {
+    padding: 0 4.818% 0 5.209%;
+  }
+
+  .selection-form__field-group-title {
+    padding: 0 5.209% 0 5.209%;
+  }
+
   .selection-form__field-group--desired-program {
     border: 1px solid  rgba($pinkish-grey, 0.5);
+  }
+
+  .selection-form__option-list--additionally {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .selection-form__additionally-item:nth-child(2n) {
+    width: 45.5%;
+  }
+
+  .selection-form__additionally-item:nth-child(2n-1) {
+    width: 54.5%;
+  }
+
+  .selection-form__submit {
+    width: 44.849%;
+  }
+}
+
+@media (min-width: 1323px) {
+  .selection-form__wrapper,
+  .selection-form__cat-info,
+  .selection-form__field-group-wrapper {
+    padding: 0 64px 0 69px;
+  }
+
+  .selection-form__field-group-title {
+    padding: 0 69px 0 69px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .selection-form__cat-info {
     display: flex;
+    justify-content: space-between;
   }
 
   .selection-form__field-group-wrapper--contacts {
     display: flex;
+    justify-content: space-between;
+  }
+
+  .selection-form__wrapper,
+  .selection-form__cat-info,
+  .selection-form__field-group-wrapper {
+    padding: 0;
+  }
+
+  .selection-form__field-group-title {
+    padding: 0;
+  }
+
+  .selection-form__additionally-item:nth-child(2n-1),
+  .selection-form__additionally-item:nth-child(2n) {
+    width: 25%;
+  }
+
+  .selection-form__submit {
+    width: 46.558%;
   }
 }
