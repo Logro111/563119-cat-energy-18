@@ -12,6 +12,7 @@
 .example__description {
   margin: 0;
   margin-bottom: 25px;
+  padding-right: 2%;
 }
 
 .example__results-list {
@@ -66,7 +67,16 @@
 
 @media (min-width: $tablet-width) {
   .example {
+    padding: 0;
+
+    @include font(16px, 24px);
+
     background-color: #ffffff;
+  }
+
+  .example__description {
+    width: 100%;
+    padding-right: 4.52%;
   }
 
   .example__results-list {
@@ -77,9 +87,11 @@
     background-color: #ffffff;
   }
 
-  .example__results {
+  .example__content {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+    padding-bottom: 241px;
   }
 }
 
@@ -89,8 +101,40 @@
     background-image: linear-gradient(to right, $light-grey 50%, $grey 50%);
   }
 
+  .example__header {
+    width: 100%;
+
+    background-color: #ffffff;
+  }
+
   .example__wrapper {
+    display: flex;
+    justify-content: space-between;
     background-image: linear-gradient(to right, $light-grey 76.639%, $grey 76.639%);
     background-color: white;
+  }
+
+  .example__content {
+    flex-direction: column;
+    width: 35.656%;
+
+    padding: 0;
+  }
+
+  .example__description {
+    width: 100%;
+    padding-right: 0;
+  }
+
+  .example__results-list {
+    width: auto;
+  }
+
+  .example__result-list-wrapper {
+    width: 37.242%;
+  }
+
+  .example__result-description {
+    background-color: $light-grey;
   }
 }
