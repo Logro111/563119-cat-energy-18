@@ -12,12 +12,12 @@
   margin-bottom: 28px;
 
   &:last-child {
-    margin: 0;
+    margin-bottom: 0;
   }
 }
 
 .product-application__title {
-  margin-bottom: 30px;
+  margin-bottom: 31px;
 }
 
 @media (min-width: $tablet-width) {
@@ -25,9 +25,23 @@
     padding: 0;
   }
 
+  .product-application__item {
+    margin-bottom: 0;
+    margin-top: 83px;
+
+    &:nth-child(-n+2) {
+      margin-top: 0;
+    }
+  }
+
   .product-application__list {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    counter-reset: property-number;
+  }
+
+  .product-application__title {
+    margin-bottom: 72px;
   }
 }

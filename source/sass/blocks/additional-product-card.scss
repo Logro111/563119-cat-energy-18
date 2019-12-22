@@ -1,5 +1,5 @@
 .additional-product-card {
-  padding: 13px 0 17px 0;
+  padding: 12.5px 0 17px 0;
 
   @include font(14px, 14px);
 
@@ -11,7 +11,8 @@
 }
 
 .additional-product-card__title {
-  margin-bottom: 11px;
+  margin-bottom: 14px;
+  padding-left: 0.714%;
 
   @include font(16px, 16px);
 
@@ -20,7 +21,23 @@
 }
 
 .additional-product-card__features {
-  margin-bottom: 12px;
+  margin-bottom: 15px;
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+
+.additional-product-card__features-item {
+  padding: 0;
+}
+
+.additional-product-card__features-item:first-child {
+  width: 70%;
+}
+
+.additional-product-card__features-item:last-child {
+  text-align: right;
+  width: 30%;
 }
 
 @media (min-width: $tablet-width) {
@@ -29,7 +46,7 @@
     justify-content: space-between;
     flex-wrap: wrap;
     align-items: center;
-    padding: 28px 5.085% 28px 5.226%;
+    padding: 20px 5.085% 27px 5.226%;
 
     @include font(16px, 20px);
 
@@ -42,25 +59,25 @@
 
   .additional-product-card__title {
     @include font(20px, 20px);
+    padding-left: 0;
     margin: 0;
   }
 
   .additional-product-card__link {
     width: 100%;
-    margin-top: 22px;
+    margin-top: 23px;
   }
 
   .additional-product-card__features {
     width: 49.921%;
     margin: 0;
+    margin-top: 8px;
     padding-top: 10px;
     border-collapse: collapse;
   }
 
   .additional-product-card__features-item {
     padding: 0;
-    padding-top: 9px;
-
 
     text-align: right;
   }
@@ -91,25 +108,27 @@
   }
 
   .additional-product-card__features {
-    width: 36.649%;
-    margin: 0;
+    width: 35.196%;
+    margin: 0 1.118% 0 auto;
     margin-left: auto;
 
     table-layout: fixed;
   }
 
   .additional-product-card__features-item {
-    padding: 0;
-    padding-top: 6px;
-    padding-right: 3.049%;
+    text-align: left;
+    padding-top: 8px;
   }
 
   .additional-product-card__features-item:first-child {
-    width: 75%;
+    width: 77.5%;
+    padding-right: 3.049%;
   }
 
   .additional-product-card__features-item:last-child {
+    width: auto;
     word-break: break-all;
+    text-align: left;
   }
 
   .additional-product-card__link {

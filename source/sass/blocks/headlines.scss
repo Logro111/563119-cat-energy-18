@@ -8,3 +8,9 @@
 
   color: $dark-text-color;
 }
+
+@media (min-width: $tablet-width) {
+  .headlines {
+    @include font(60px, 60px);
+  }
+}

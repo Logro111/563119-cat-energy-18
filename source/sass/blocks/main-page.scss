@@ -3,9 +3,63 @@
 }
 
 .main-page__programs-overview {
-  margin-bottom: 15px;
+  margin-bottom: 22px;
 }
 
 .main-page__product-application {
-  margin-bottom: 42px;
+  margin-bottom: 45px;
+}
+
+@media (min-width: $tablet-width) {
+  .main-page {
+    padding-top: 40px;
+    padding-bottom: 75px;
+  }
+
+  .main-page--index {
+    padding: 0;
+  }
+
+  .main-page__promo {
+    margin-bottom: 0;
+  }
+
+  .main-page__programs-overview {
+    margin-bottom: 45px;
+  }
+
+  .main-page__product-application {
+    margin-bottom: 97px;
+  }
+
+  .main-page__product-catalog {
+    margin-bottom: 65px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-page {
+    padding-top: 57px;
+    padding-bottom: 86px;
+  }
+
+  .main-page--index {
+    padding: 0;
+  }
+
+  .main-page__promo {
+    margin-bottom: 80px;
+  }
+
+  .main-page__programs-overview {
+    margin-bottom: 72px;
+  }
+
+  .main-page__product-application {
+    margin-bottom: 76px;
+  }
+
+  .main-page__product-catalog {
+    margin-bottom: 75px;
+  }
 }

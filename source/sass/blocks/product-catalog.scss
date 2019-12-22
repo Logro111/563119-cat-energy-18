@@ -3,8 +3,8 @@
 }
 
 .product-catalog__title {
-  margin-bottom: 27px;
-  padding: 0 $mobile-center;
+  margin-bottom: 29px;
+  padding: 15px $mobile-center 0;
 }
 
 .product-catalog__list {
@@ -12,7 +12,12 @@
 }
 
 @media (min-width: $tablet-width) {
+  .product-catalog {
+    @include font(16px, 16px);
+  }
+
   .product-catalog__title {
+    margin-bottom: 165px;
     padding: 0;
   }
 

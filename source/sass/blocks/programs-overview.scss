@@ -18,9 +18,13 @@
   .programs-overview {
     padding: 0;
   }
+
+  .programs-overview__item {
+    margin-bottom: 30px;
+  }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: $desktop-width) {
   .programs-overview__list {
     display: flex;
     justify-content: space-between;
