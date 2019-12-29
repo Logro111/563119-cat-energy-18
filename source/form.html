@@ -10,7 +10,7 @@
     <header class="page-header">
       <div class="page-header__wrapper center">
         <a class="page-header__logo" href="">
-          <img class="page-header__logo-image" src="../img/logo-mobile.svg" width="191" height="39" alt="Магазин Cat Energy">
+          <img class="page-header__logo-image" src="img/logo-mobile.svg" width="191" height="39" alt="Магазин Cat Energy">
         </a>
         <nav class="main-navigation main-navigation--closed main-navigation--nojs">
           <button class="main-navigation__toggle" type="button"></button>
@@ -33,79 +33,81 @@
         </div>
         <form class="selection-form" action="https://echo.htmlacademy.ru" method="POST">
           <div class="selection-form__cat-info center">
-            <fieldset class="selection-form__field-group">
-              <legend class="visually-hidden">Данные кота</legend>
-              <label class="selection-form__input-field-label">Имя:*
-                <input class="selection-form__input-field" type="text" id="cat-name" name="cat-name" placeholder="Барсик">
-              </label>
-              <label class="selection-form__input-field-label">Вес (кг):*
-                <input class="selection-form__input-field" type="text" id="cat-weight" name="cat-weight" placeholder="7">
-              </label>
-              <label class="selection-form__input-field-label">Возраст (лет):
-                <input class="selection-form__input-field" type="text" id="cat-age" name="cat-age" placeholder="7">
-              </label>
-            </fieldset>
+            <div class="selection-form__field-group-wrapper">
+              <fieldset class="selection-form__field-group">
+                <legend class="visually-hidden">Данные кота</legend>
+                <label class="selection-form__input-field-label"><span class="selection-form__label-text">Имя:*</span>
+                  <input class="selection-form__input-field" type="text" id="cat-name" name="cat-name" placeholder="Барсик">
+                </label>
+                <label class="selection-form__input-field-label"><span class="selection-form__label-text">Вес (кг):*</span>
+                  <input class="selection-form__input-field" type="text" id="cat-weight" name="cat-weight" placeholder="7">
+                </label>
+                <label class="selection-form__input-field-label"><span class="selection-form__label-text">Возраст (лет):</span>
+                  <input class="selection-form__input-field" type="text" id="cat-age" name="cat-age" placeholder="7">
+                </label>
+              </fieldset>
+            </div>
             <fieldset class="selection-form__field-group selection-form__field-group--desired-program">
               <legend class="visually-hidden">Желаемая программа</legend>
               <ul class="selection-form__option-list">
-                <li>
-                  <input class="selection-form__selection-option" type="radio" id="losing-weight" name="program" value="losing-weight">
-                  <label class="selection-form__selection-option-label" for="losing-weight">Похудение</label>
+                <li class="selection-form__option-item">
+                  <input class="selection-form__selection-option visually-hidden selection-form__selection-option--radio" type="radio" id="losing-weight" name="program" value="losing-weight">
+                  <label class="selection-form__selection-option-label selection-form__selection-option-label--radio" for="losing-weight">Похудение</label>
                 </li>
-                <li>
-                  <input class="selection-form__selection-option" type="radio" id="mass-gain" name="program" value="mass-gain">
-                  <label class="selection-form__selection-option-label" for="mass-gain">Набор массы</label>
+                <li class="selection-form__option-item">
+                  <input class="selection-form__selection-option visually-hidden selection-form__selection-option--radio" type="radio" id="mass-gain" name="program" value="mass-gain">
+                  <label class="selection-form__selection-option-label selection-form__selection-option-label--radio" for="mass-gain">Набор массы</label>
                 </li>
-                <li>
-                  <input class="selection-form__selection-option" type="radio" id="need-advice" name="program" value="need-advice">
-                  <label class="selection-form__selection-option-label" for="need-advice">Не знаю (Нужен ваш совет)</label>
+                <li class="selection-form__option-item">
+                  <input class="selection-form__selection-option visually-hidden selection-form__selection-option--radio" type="radio" id="need-advice" name="program" value="need-advice">
+                  <label class="selection-form__selection-option-label selection-form__selection-option-label--radio" for="need-advice">Не знаю (Нужен ваш совет)</label>
                 </li>
               </ul>
             </fieldset>
           </div>
           <fieldset class="selection-form__field-group">
-            <header>
-              <legend class="selection-form__field-group-title center">
+            <header class="selection-form__field-group-header">
+              <legend class="selection-form__field-group-title">
                 Контактные данные (владельца кота)
               </legend>
             </header>
             <div class="selection-form__field-group-wrapper selection-form__field-group-wrapper--contacts center">
-              <label class="selection-form__input-field-label">E-mail:*
+              <label class="selection-form__input-field-label"><span class="selection-form__label-text">E-mail:*</span>
                 <input class="selection-form__input-field" type="email" id="email" name="email" placeholder="kuklachev@gmail.com">
               </label>
-              <label class="selection-form__input-field-label">Телефон
+              <label class="selection-form__input-field-label"><span class="selection-form__label-text">Телефон</span>
                 <input class="selection-form__input-field" type="tel" id="telephone" name="telephone" placeholder="8 (960) 900-60-90">
               </label>
             </div>
           </fieldset>
           <fieldset class="selection-form__field-group">
-            <header>
-              <legend class="selection-form__field-group-title center">Комментарий</legend>
+            <header class="selection-form__field-group-header">
+              <legend class="selection-form__field-group-title">Комментарий</legend>
             </header>
             <div class="selection-form__field-group-wrapper center">
               <textarea class="selection-form__comment" name="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
             </div>
           </fieldset>
           <fieldset class="selection-form__field-group">
-            <header>
-              <legend class="selection-form__field-group-title center">Дополнительно</legend>
+            <header class="selection-form__field-group-header selection-form__field-group-header--additionally">
+              <legend class="selection-form__field-group-title">Дополнительно</legend>
             </header>
             <div class="selection-form__field-group-wrapper center">
               <ul class="selection-form__option-list selection-form__option-list--additionally">
-                <li class="selection-form__additionally-item">
-                  <input class="selection-form__selection-option" type="checkbox" id="sweetener" name="weetener" checked>
+                <li class="selection-form__option-item selection-form__option-item--additionally">
+                  <input class="selection-form__selection-option visually-hidden" type="checkbox" id="sweetener" name="weetener" checked>
                   <label class="selection-form__selection-option-label" for="sweetener">Сахарозаменитель</label>
                 </li>
-                <li class="selection-form__additionally-item">
-                  <input class="selection-form__selection-option" type="checkbox" id="water" name="water">
+                <li class="selection-form__option-item selection-form__option-item--additionally">
+                  <input class="selection-form__selection-option visually-hidden" type="checkbox" id="water" name="water">
                   <label class="selection-form__selection-option-label" for="water">Питьевая вода</label>
                 </li>
-                <li class="selection-form__additionally-item">
-                  <input class="selection-form__selection-option" type="checkbox" id="milk" name="milk">
+                <li class="selection-form__option-item selection-form__option-item--additionally">
+                  <input class="selection-form__selection-option visually-hidden" type="checkbox" id="milk" name="milk">
                   <label class="selection-form__selection-option-label" for="milk">Молоко</label>
                 </li>
-                <li class="selection-form__additionally-item">
-                  <input class="selection-form__selection-option" type="checkbox" id="vitamins" name="vitamins">
+                <li class="selection-form__option-item selection-form__option-item--additionally">
+                  <input class="selection-form__selection-option visually-hidden" type="checkbox" id="vitamins" name="vitamins">
                   <label class="selection-form__selection-option-label" for="vitamins">Витамины</label>
                 </li>
               </ul>
@@ -138,7 +140,7 @@
         <iframe class="location__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533268!2d30.320858716070596!3d59.938716481876156!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1575664050065!5m2!1sru!2sru" allowfullscreen=""></iframe>
       </div>
       <div class="page-footer__wrapper center">
-        <img class="page-footer__logo-image" src="../img/logo-footer.svg" width="45.715%" height="24" alt="Магазин Cat Energy">
+        <img class="page-footer__logo-image" src="img/logo-footer.svg" width="45.715%" height="24" alt="Магазин Cat Energy">
         <ul class="page-footer__list social-list">
           <li class="social-list__item social-list__item--vk">
             <a class="social-list__link" href="" aria-label="Cat energy в Вконтакте">
