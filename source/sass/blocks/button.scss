@@ -1,6 +1,6 @@
 .button {
   display: block;
-  padding: 10px 0;
+  padding: 10px 0 10px;
 
   @include font(16px, 20px);
   @include Oswald-font;
@@ -12,4 +12,24 @@
 
   border: none;
   background-color: $leaf-green;
+}
+
+.button:hover,
+.button:focus {
+  background-color: $green-button-hvr;
+}
+
+.button:active {
+  background-color: $green-button-hvr;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.button--grey:hover,
+.button--grey:focus {
+  background-color: $grey-button-hvr;
+}
+
+.button--grey:active {
+  background-color: $grey-button-hvr;
+  color: rgba(68, 68, 68, 0.3);
 }

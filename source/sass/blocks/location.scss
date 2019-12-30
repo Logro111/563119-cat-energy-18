@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-between;
   margin-bottom: 26px;
-  padding: 27px $mobile-center 26px;
+  padding: 28px 7.813% 0 5.938%;
 }
 
 .location--index {
@@ -38,39 +38,59 @@
   border: none;
   width: 100%;
   max-width: 100%;
+  min-height: 363px;
 }
 
 @media (min-width: $tablet-width) {
   .location__description {
-    padding: 60px 5.791%;
+    padding: 65px 5.791% 34px;
+  }
+
+  .location__headline {
+    @include font(20px, 25px);
+    max-width: 160px;
   }
 
   .location__address {
+    max-width: 156px;
+
     text-align: right;
+
+    @include font(16px, 20px);
+  }
+
+  .location__city {
+    display: block;
+    margin-top: 19px;
+  }
+
+  .location__map {
+    min-height: 400px;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .location {
+  .location__wrapper {
     position: relative;
   }
 
   .location__description {
-    width: 39.584%;
-    padding: 60px 0;
+    width: 46.721%;
+    padding: 65px 7.378% 57px 6.23%;
     max-width: 570px;
     position: absolute;
+    top: 95px;
     background-color: #ffffff;
   }
 
   .location__address {
-    padding-right: 15.769%;
-    max-width: 100%;
+    max-width: 27.193%;
+
+    text-align: left;
   }
 
   .location__headline {
-    padding-left: 13.333%;
-    max-width: 100%;
+    max-width: 27.193%;
   }
 
   .location__map {

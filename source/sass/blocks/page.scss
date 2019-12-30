@@ -1,0 +1,21 @@
+/*html {
+  background-image: url("../img/cat-energy-catalog-tablet.jpg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+body {
+  opacity: 0.6;
+}*/
+
+@media (min-width: $tablet-width) {
+  .page__page-header {
+    margin-bottom: 39px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page__page-header {
+    margin-bottom: 0;
+  }
+}

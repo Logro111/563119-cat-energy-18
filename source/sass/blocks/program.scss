@@ -1,5 +1,5 @@
 .program {
-  padding: 39px 21px 22px;
+  padding: 30px 7.143% 18px;
 
   @include font(14px, 18px);
 
@@ -7,8 +7,11 @@
 }
 
 .program__title {
+  position: relative;
+
   margin: 0;
-  margin-bottom: 36px;
+  margin-bottom: 29px;
+  padding-left: 29.412%;
 
   font-weight: normal;
 
@@ -21,20 +24,58 @@
 
 .program__description {
   margin: 0;
-  margin-bottom: 44px;
+  margin-bottom: 42px;
 }
 
 .program__link {
+  position: relative;
+
   @include font(16px, 16px);
   @include Oswald-font;
   color: $dark-text-color;
 
-
   @include link;
+}
+
+@media (min-width: $tablet-width) {
+  .program {
+    padding: 78px 39.972% 56px 7.345%;
+
+    @include font(16px, 24px);
+  }
+
+  .program--pro {
+    padding: 78px 44.492% 56px 7.345%;
+  }
+
+  .program__title {
+    margin-bottom: 25px;
+    padding: 0;
+
+    @include font(36px, 37px);
+  }
+
+  .program__description {
+    margin-bottom: 55px;
+  }
+
+  .program__link {
+    @include font(20px, 20px);
+  }
 }
 
 @media (min-width: $desktop-width) {
   .program {
     width: 46.722%;
+    padding: 75px 4.263% 57px;
+  }
+
+  .program__title {
+    padding-left: 35.1%;
+    margin-bottom: 74px;
+  }
+
+  .program__description {
+    margin-bottom: 31px;
   }
 }

@@ -1,5 +1,7 @@
 .more-goods {
-  padding: 26px $mobile-center 24px;
+  display: block;
+  padding-top: 26px;
+  padding-bottom: 24px;
 
   border: 1px solid #ededed;
   border-top: none;
@@ -7,6 +9,7 @@
 
 .more-goods__headline {
   display: block;
+  margin-bottom: 8px;
 
   font-weight: normal;
 
@@ -20,7 +23,8 @@
 }
 
 .more-goods__description {
-  @include font(12px, 16px);
+  margin: 0;
+  margin-bottom: 21px;
 
   text-align: center;
 }
@@ -31,9 +35,49 @@
   background-color: $light-grey;
 }
 
+.more-goods__show-more {
+  display: block;
+  width: 31px;
+  height: 31px;
+  margin: 0 auto 22px;
+}
+
 @media (min-width: $tablet-width) {
   .more-goods {
+    padding-top: 54px;
+    padding-bottom: 39px;
+    background-color: #ffffff;
+
     border: 1px solid $pinkish-grey;
     border-bottom: 1px solid $pinkish-grey;
+  }
+
+  .more-goods__show-more {
+    width: 61px;
+    height: 61px;
+    margin-bottom: 48px;
+  }
+
+  .more-goods__headline {
+    width: 54.252%;
+    margin: 0 auto 26px;
+
+    @include font (20px, 20px);
+  }
+
+  .more-goods__description {
+    line-height: normal;
+    width: 67.612%;
+    margin: 0 auto 85px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .more-goods__headline {
+    width: 80.839%;
+  }
+
+  .more-goods__description {
+    width: 100%;
   }
 }

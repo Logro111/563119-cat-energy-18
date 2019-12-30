@@ -6,23 +6,23 @@
     <title>Главная</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
-  <body>
-    <header class="page-header header--index">
+  <body class="page">
+    <header class="page__page-header page-header header--index">
       <div class="page-header__wrapper center">
         <a class="page-header__logo" href="">
-          <img class="page-header__logo-image" src="../img/logo-mobile.svg" width="191" height="39" alt="Магазин Cat Energy">
+          <img class="page-header__logo-image" src="img/logo-mobile.svg"  alt="Магазин Cat Energy">
         </a>
-        <nav class="main-navigation">
+        <nav class="main-navigation main-navigation--index main-navigation--closed main-navigation--nojs">
           <button class="main-navigation__toggle" type="button"></button>
           <ul class="main-navigation__list">
-            <li class="main-navigation__item"><a class="main-navigation__link">Главная</a></li>
+            <li class="main-navigation__item main-navigation__link--active"><a class="main-navigation__link">Главная</a></li>
             <li class="main-navigation__item"><a class="main-navigation__link" href="catalog.html">Каталог продукции</a></li>
             <li class="main-navigation__item"><a class="main-navigation__link" href="form.html">Подбор программы</a></li>
           </ul>
         </nav>
       </div>
     </header>
-    <main class="main-page">
+    <main class="main-page main-page--index">
       <h1 class="visually-hidden">Магазин функционального питания для котов Cat energy.</h1>
       <section class="promo main-page__promo">
         <div class="promo__wrapper center">
@@ -35,7 +35,7 @@
               <p class="promo__description-item">
                 Занялся собой? Займись котом!
               </p>
-            <img class="promo__image" src="https://via.placeholder.com/150x150" alt="Cat Energy Pro со вкусом курицы">
+            <img class="promo__image" src="img/index-can-mobile@1x.png" width="280" height="270" alt="Cat Energy Pro со вкусом курицы">
             <a class="promo__link button" href="">Подобрать программу</a>
           </div>
         </div>
@@ -44,23 +44,23 @@
         <h2 class="visually-hidden">Обзор программ</h2>
         <ul class="programs-overview__list">
           <li class="programs-overview__item program">
-            <h3 class="program__title">Похудение</h3>
+            <h3 class="program__title program__title--slim">Похудение</h3>
             <p class="program__description">
-              Ваш кот весит больше собаки<br>
-              и почти утратил способность лазить<br>
-              по деревьям? Пора на диету! Cat<br>
-              Energy Slim поможет вашему<br>
+              Ваш кот весит больше собаки
+              и почти утратил способность лазить
+              по деревьям? Пора на диету! Cat
+              Energy Slim поможет вашему
               питомцу сбросить лишний вес.
             </p>
             <a class="program__link" href="">Каталог Slim</a>
           </li>
-          <li class="programs-overview__item program">
-            <h3 class="program__title">Набор массы</h3>
+          <li class="programs-overview__item program program--pro">
+            <h3 class="program__title program__title--pro">Набор массы</h3>
             <p class="program__description">
-              Заработать авторитет среди<br>
-              дворовых котов и даже собак?<br>
-              Серия Cat Energy Pro поможет<br>
-              вашему коту нарастить<br>
+              Заработать авторитет среди
+              дворовых котов и&nbsp;даже собак?
+              Серия Cat Energy Pro поможет
+              вашему коту нарастить
               необходимые мышцы!
             </p>
             <a class="program__link" href="">Каталог Pro</a>
@@ -95,7 +95,7 @@
             <p class="product-property__description">
               Уже через месяц
               наслаждайтесь изменениями
-              к лучшему вашего питомца!
+              к лучшему <br class="product-property__br"> вашего питомца!
             </p>
           </li>
         </ul>
@@ -155,21 +155,21 @@
         <div class="location__wrapper center">
           <div class="location__description">
             <strong class="location__headline">
-              Приглашаем <br>
-              к сотрудничеству <br>
+              Приглашаем
+              к&nbsp;cотрудничеству
               дилеров!
             </strong>
             <p class="location__address">
-              ул. Большая <br>
-              Конюшенная, д. 19/8 <br>
-              Санкт-Петербург
+              ул. Большая
+              Конюшенная, д. 19/8
+              <span class="location__city">Санкт-Петербург</span>
             </p>
           </div>
         </div>
         <iframe class="location__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533268!2d30.320858716070596!3d59.938716481876156!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1575664050065!5m2!1sru!2sru" allowfullscreen=""></iframe>
       </div>
       <div class="page-footer__wrapper center">
-        <img class="page-footer__logo-image" src="../img/logo-footer.svg" width="45.715%" height="24" alt="Магазин Cat Energy">
+        <img class="page-footer__logo-image" src="img/logo-footer.svg" width="45.715%" height="24" alt="Магазин Cat Energy">
         <ul class="page-footer__list social-list">
           <li class="social-list__item social-list__item--vk">
             <a class="social-list__link" href="" aria-label="Cat energy в Вконтакте">
@@ -228,5 +228,6 @@
         </div>
       </div>
     </footer>
+    <script src="js/scripts.js"></script>
   </body>
   </html>

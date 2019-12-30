@@ -25,3 +25,7 @@
 
   text-transform: uppercase;
 }
+
+@mixin middle-headline {
+  @include font(36px, 36px);
+}

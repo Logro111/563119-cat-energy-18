@@ -1,5 +1,8 @@
 .product-card {
-  padding: 0 $mobile-center 24px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0 5.938% 24px;
 
   border: 1px solid #ededed;
   border-top: none;
@@ -17,16 +20,53 @@
 }
 
 .product-card__title {
+  padding-right: 47.102%;
+  margin-bottom: 13px;
+
+
   font-weight: normal;
 
   @include font(16px, 20px);
 }
 
+.product-card__buy-link {
+  width: 100%;
+}
+
+.product-card__image {
+  width: 140px;
+  height: 144px;
+  display: block;
+}
+
+.product-card__content {
+  width: calc(100% - 140px);
+  padding-top: 8px;
+}
+
+.product-card__features {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+
+.product-card__features-item {
+  padding: 0;
+}
+
+.product-card__features-item:nth-child(2n) {
+  text-align: right;
+}
+
 @media (min-width: $tablet-width) {
   .product-card {
+    flex-direction: column;
+    align-items: center;
     width: 45.763%;
     margin-top: 140px;
-    padding: 40px 0;
+    padding: 0 5.226% 40px 5.368%;
+
+    background-color: $light-grey;
 
     border: 0 none;
 
@@ -38,14 +78,65 @@
       border-top: 0 none;
     }
   }
+
+  .product-card__content {
+    width: 100%;
+  }
+
+  .product-card__title {
+    width: 52.209%;
+    margin: 0 auto 18px;
+    padding: 0;
+
+    @include font(20px, 20px);
+    text-align: center;
+  }
+
+  .product-card__features-item {
+    position: relative;
+    padding-top: 8px;
+    padding-bottom: 8px;
+  }
+
+  .product-card__features-item::after {
+    content: "";
+    display: block;
+    background-color: $pinkish-grey;
+    position: absolute;
+    bottom: -1px;
+    width: 100%;
+    height: 1px;
+  }
+
+  .product-card__features {
+    margin-bottom: 34px;
+  }
+
+  .product-card__image {
+    height: 126px;
+  }
+
+  .product-card__product-image-link {
+    margin-bottom: 29px;
+  }
 }
 
 @media (min-width: $desktop-width) {
   .product-card {
+    padding-left: 3.115%;
+    padding-right: 3.115%;
     width: 20.082%;
 
     &:nth-child(-n+4) {
       margin-top: 0;
     }
+  }
+
+  .product-card__image {
+    height: 127px;
+  }
+
+  .product-card__title {
+    width: 76.924%;
   }
 }
