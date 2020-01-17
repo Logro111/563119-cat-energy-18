@@ -1,5 +1,5 @@
 .additional-products {
-  padding: 28px 0 34px;
+  padding: 28px 0 2px;
 }
 
 .additional-products__title {
@@ -68,6 +68,10 @@
     padding: 0;
   }
 
+  .additional-products__wrapper {
+    padding: 0;
+  }
+
   .additional-products__header::after {
     top: 24px;
   }
@@ -133,6 +137,10 @@
 }
 
 @media (min-width: $desktop-width) {
+  .additional-products {
+    padding-bottom: 3px;
+  }
+
   .additional-products__wrapper {
     display: flex;
     justify-content: space-between;

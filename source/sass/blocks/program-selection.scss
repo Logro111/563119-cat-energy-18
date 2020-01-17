@@ -7,7 +7,18 @@
 }
 
 .program-selection__description-wrapper {
+  margin-bottom: 39px;
   padding: 0 $mobile-center;
+}
+
+.program-selection__title {
+  margin-bottom: 26px;
+
+  text-transform: none;
+}
+
+.program-selection__description {
+  margin: 0;
 }
 
 @media (min-width: $tablet-width) {
@@ -18,12 +29,17 @@
   }
 
   .program-selection__description-wrapper {
+    margin-bottom: 67px;
     padding: 0;
   }
 
   .program-selection__description {
     line-height: 30px;
     padding: 0 5.226% 0 5.65%;
+  }
+
+  .program-selection__title {
+    margin-bottom: 55px;
   }
 }
 
