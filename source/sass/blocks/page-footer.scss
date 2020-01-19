@@ -17,11 +17,14 @@
 }
 
 @media (min-width: $tablet-width) {
+  .page-footer {
+    padding-bottom: 57px;
+  }
+
   .page-footer__wrapper {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    padding: 12px 0 0;
+    padding: 20px 0 0;
   }
 
   .page-footer__copyright {
@@ -31,6 +34,7 @@
 
   .page-footer__logo-image {
     margin: 0;
+    margin-right: 22.034%;
     width: 18.079%;
   }
 }

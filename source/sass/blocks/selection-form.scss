@@ -155,6 +155,21 @@
   border-radius: 50%;
 }
 
+.selection-form__selection-option-label--checkbox::after {
+  content: "";
+
+  position: absolute;
+  top: 2px;
+  left: 5px;
+
+  display: none;
+  width: 22px;
+  height: 17px;
+
+  background-image: url("../img/icon-tick.svg");
+  background-repeat: no-repeat;
+}
+
 .selection-form__selection-option-label--checkbox::before {
   content: "";
 
@@ -163,6 +178,10 @@
 
 .selection-form__selection-option--radio:checked + .selection-form__selection-option-label--radio::before {
   background-image: radial-gradient(circle, $leaf-green 29%, white 30%);
+}
+
+.selection-form__selection-option--checkbox:checked + .selection-form__selection-option-label--checkbox::after {
+  display: block;
 }
 
 .selection-form__submit {
@@ -304,6 +323,11 @@
 
   .selection-form__selection-option-label--radio::before {
     left: 26px;
+  }
+
+  .selection-form__selection-option-label--checkbox::after {
+    top: 2px;
+    left: 10px;
   }
 
   .selection-form__wrapper {
