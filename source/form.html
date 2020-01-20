@@ -33,8 +33,8 @@
         </div>
         <form class="selection-form" action="https://echo.htmlacademy.ru" method="POST">
           <div class="selection-form__cat-info center">
-            <div class="selection-form__field-group-wrapper">
-              <fieldset class="selection-form__field-group">
+            <fieldset class="selection-form__field-group">
+              <div class="selection-form__field-group-wrapper">
                 <legend class="visually-hidden">Данные кота</legend>
                 <label class="selection-form__input-field-label"><span class="selection-form__label-text">Имя:*</span>
                   <input class="selection-form__input-field" type="text" id="cat-name" name="cat-name" placeholder="Барсик">
@@ -45,8 +45,8 @@
                 <label class="selection-form__input-field-label"><span class="selection-form__label-text">Возраст (лет):</span>
                   <input class="selection-form__input-field" type="text" id="cat-age" name="cat-age" placeholder="7">
                 </label>
-              </fieldset>
-            </div>
+              </div>
+            </fieldset>
             <fieldset class="selection-form__field-group selection-form__field-group--desired-program">
               <legend class="visually-hidden">Желаемая программа</legend>
               <ul class="selection-form__option-list">
@@ -67,22 +67,26 @@
           </div>
           <fieldset class="selection-form__field-group">
             <header class="selection-form__field-group-header">
-              <legend class="selection-form__field-group-title">
-                Контактные данные (владельца кота)
-              </legend>
+              <div class="selection-form__field-group-header-container center">
+                <legend class="selection-form__field-group-title">
+                  Контактные данные (владельца кота)
+                </legend>
+              </div>
             </header>
             <div class="selection-form__field-group-wrapper selection-form__field-group-wrapper--contacts center">
               <label class="selection-form__input-field-label"><span class="selection-form__label-text">E-mail:*</span>
                 <input class="selection-form__input-field" type="email" id="email" name="email" placeholder="kuklachev@gmail.com">
               </label>
-              <label class="selection-form__input-field-label"><span class="selection-form__label-text">Телефон</span>
+              <label class="selection-form__input-field-label"><span class="selection-form__label-text selection-form__label-text--telephone">Телефон</span>
                 <input class="selection-form__input-field" type="tel" id="telephone" name="telephone" placeholder="8 (960) 900-60-90">
               </label>
             </div>
           </fieldset>
           <fieldset class="selection-form__field-group">
             <header class="selection-form__field-group-header">
-              <legend class="selection-form__field-group-title">Комментарий</legend>
+              <div class="selection-form__field-group-header-container center">
+                <legend class="selection-form__field-group-title">Комментарий</legend>
+              </div>
             </header>
             <div class="selection-form__field-group-wrapper center">
               <textarea class="selection-form__comment" name="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
@@ -90,25 +94,27 @@
           </fieldset>
           <fieldset class="selection-form__field-group">
             <header class="selection-form__field-group-header selection-form__field-group-header--additionally">
-              <legend class="selection-form__field-group-title">Дополнительно</legend>
+              <div class="selection-form__field-group-header-container center">
+                <legend class="selection-form__field-group-title">Дополнительно</legend>
+              </div>
             </header>
             <div class="selection-form__field-group-wrapper center">
               <ul class="selection-form__option-list selection-form__option-list--additionally">
                 <li class="selection-form__option-item selection-form__option-item--additionally">
-                  <input class="selection-form__selection-option visually-hidden" type="checkbox" id="sweetener" name="weetener" checked>
-                  <label class="selection-form__selection-option-label" for="sweetener">Сахарозаменитель</label>
+                  <input class="selection-form__selection-option visually-hidden selection-form__selection-option--checkbox" type="checkbox" id="sweetener" name="weetener" checked>
+                  <label class="selection-form__selection-option-label selection-form__selection-option-label--checkbox" for="sweetener">Сахарозаменитель</label>
                 </li>
                 <li class="selection-form__option-item selection-form__option-item--additionally">
-                  <input class="selection-form__selection-option visually-hidden" type="checkbox" id="water" name="water">
-                  <label class="selection-form__selection-option-label" for="water">Питьевая вода</label>
+                  <input class="selection-form__selection-option visually-hidden selection-form__selection-option--checkbox" type="checkbox" id="water" name="water">
+                  <label class="selection-form__selection-option-label selection-form__selection-option-label--checkbox" for="water">Питьевая вода</label>
                 </li>
                 <li class="selection-form__option-item selection-form__option-item--additionally">
-                  <input class="selection-form__selection-option visually-hidden" type="checkbox" id="milk" name="milk">
-                  <label class="selection-form__selection-option-label" for="milk">Молоко</label>
+                  <input class="selection-form__selection-option visually-hidden selection-form__selection-option--checkbox" type="checkbox" id="milk" name="milk">
+                  <label class="selection-form__selection-option-label selection-form__selection-option-label--checkbox" for="milk">Молоко</label>
                 </li>
                 <li class="selection-form__option-item selection-form__option-item--additionally">
-                  <input class="selection-form__selection-option visually-hidden" type="checkbox" id="vitamins" name="vitamins">
-                  <label class="selection-form__selection-option-label" for="vitamins">Витамины</label>
+                  <input class="selection-form__selection-option visually-hidden selection-form__selection-option--checkbox" type="checkbox" id="vitamins" name="vitamins">
+                  <label class="selection-form__selection-option-label selection-form__selection-option-label--checkbox" for="vitamins">Витамины</label>
                 </li>
               </ul>
             </div>

@@ -1,12 +1,11 @@
 .example {
-  min-height: 705px;
-  padding: 17px $mobile-center 35px;
+  padding: 17px $mobile-center 37px;
 
   @include font(14px, 18px);
   background-color: $light-grey;
 }
 
-.example__title {
+.example__header {
   margin-bottom: 24px;
 }
 
@@ -66,17 +65,43 @@
   text-transform: uppercase;
 }
 
+.example__content {
+  margin-bottom: 33px;
+}
+
 @media (min-width: $tablet-width) {
   .example {
+    position: relative;
+
     padding: 0;
 
     @include font(16px, 24px);
 
-    background-color: #ffffff;
+    background-color: transparent;
+  }
+
+  .example::after {
+    content: "";
+
+    position: absolute;
+    bottom: 0;
+    z-index: -1;
+
+
+    display: block;
+    width: 100%;
+    height: 462px;
+
+    background-image: linear-gradient(to right, $light-grey 50%, $grey 50%);
+  }
+
+  .example__header {
+    margin-bottom: 63px;
   }
 
   .example__description {
     width: 100%;
+    margin-bottom: 54px;
     padding-right: 4.52%;
   }
 
@@ -84,15 +109,39 @@
     width: 51.695%;
   }
 
+  .example__result-description--time {
+    width: 87.654%;
+  }
+
+  .example__result {
+    padding-bottom: 17px;
+
+    @include font(30px, 37px);
+  }
+
   .example__result-description {
+    @include font(14px, 14px);
+
     background-color: #ffffff;
+  }
+
+  .example__expenses {
+    padding-top: 10px;
+
+    @include font(20px, 20px);
+    text-align: right;
+  }
+
+  .example__expenses-money {
+    display: block;
+    margin-top: 10px;
   }
 
   .example__content {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    padding-bottom: 241px;
+    margin-bottom: 62px;
   }
 }
 
@@ -102,9 +151,14 @@
     background-image: linear-gradient(to right, $light-grey 50%, $grey 50%);
   }
 
+  .example::after {
+    display: none;
+  }
+
   .example__header {
     width: 100%;
-    padding-bottom: 53px;
+    margin-bottom: 0;
+    padding-bottom: 75px;
 
     background-color: #ffffff;
   }
@@ -117,26 +171,44 @@
   }
 
   .example__content {
-    flex-direction: column;
+    display: block;
     width: 35.656%;
-
     padding: 0;
+    padding-top: 71px;
   }
 
   .example__description {
     width: 100%;
+    margin-bottom: 70px;
     padding-right: 0;
   }
 
   .example__results-list {
     width: auto;
+    justify-content: flex-start;
+    margin-bottom: 45px;
   }
 
   .example__result-list-wrapper {
     width: 37.242%;
   }
 
+  .example__result-list-wrapper:first-child {
+    margin-right: 9.656%;
+  }
+
   .example__result-description {
+    margin-top: -8px;
+
     background-color: $light-grey;
+  }
+
+  .example__expenses {
+    display: flex;
+  }
+
+  .example__expenses-money {
+    margin-top: 0;
+    margin-left: 14.713%;
   }
 }

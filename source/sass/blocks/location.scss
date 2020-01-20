@@ -1,7 +1,7 @@
 .location__description {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 26px;
+  margin-bottom: 24px;
   padding: 28px 7.813% 0 5.938%;
 }
 
@@ -65,7 +65,7 @@
   }
 
   .location__map {
-    min-height: 400px;
+    min-height: 395px;
   }
 }
 
@@ -76,7 +76,7 @@
 
   .location__description {
     width: 46.721%;
-    padding: 65px 7.378% 57px 6.23%;
+    padding: 65px 7.049% 57px 6.23%;
     max-width: 570px;
     position: absolute;
     top: 95px;
@@ -84,7 +84,7 @@
   }
 
   .location__address {
-    max-width: 27.193%;
+    max-width: 39%;
 
     text-align: left;
   }
