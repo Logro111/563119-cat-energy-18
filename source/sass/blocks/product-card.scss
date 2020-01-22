@@ -34,8 +34,6 @@
 }
 
 .product-card__image {
-  width: 140px;
-  height: 144px;
   display: block;
 }
 
@@ -63,10 +61,11 @@
     flex-direction: column;
     align-items: center;
     width: 45.763%;
-    margin-top: 140px;
-    padding: 0 5.226% 40px 5.368%;
+    margin-top: 58px;
+    padding: 0 0 40px;
 
-    background-color: $light-grey;
+    background-image: linear-gradient(transparent 82px, $light-grey 82px);
+
 
     border: 0 none;
 
@@ -80,7 +79,7 @@
   }
 
   .product-card__content {
-    width: 100%;
+    width: 76.852%;
   }
 
   .product-card__title {
@@ -112,28 +111,36 @@
     margin-bottom: 34px;
   }
 
-  .product-card__image {
-    height: 126px;
-  }
-
   .product-card__product-image-link {
     margin-bottom: 29px;
+  }
+
+  .product-card__buy-link {
+    width: 76.852%;
+  }
+
+  .product-card__image--small {
+    padding-top: 34px;
+  }
+
+  .product-card__image--chicken {
+    padding-top: 36px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .product-card {
-    padding-left: 3.115%;
-    padding-right: 3.115%;
     width: 20.082%;
+    margin-top: 61px;
 
     &:nth-child(-n+4) {
       margin-top: 0;
     }
   }
 
-  .product-card__image {
-    height: 127px;
+  .product-card__content,
+  .product-card__buy-link {
+    width: 68.98%;
   }
 
   .product-card__title {

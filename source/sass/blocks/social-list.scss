@@ -56,3 +56,9 @@
     height: 28px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .social-list {
+    width: 123px;
+  }
+}

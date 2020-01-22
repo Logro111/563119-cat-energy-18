@@ -1,7 +1,7 @@
 .promo {
   position: relative;
 
-  padding: 28px $mobile-center 0;
+  padding: 27px $mobile-center 0;
 
   @include font(14px, 14px);
   @include Oswald-font;
@@ -29,6 +29,12 @@
   }
 }
 
+@media (min-resolution: $retina-dppx) {
+  .promo::before {
+    background-image: url("../img/index-background-mobile@2x.jpg");
+  }
+}
+
 .promo__description-item {
   margin: 0;
   margin-bottom: 28px;
@@ -51,7 +57,7 @@
 .promo__image {
   display: block;
   margin: 0 auto;
-  margin-bottom: 4px;
+  margin-bottom: 3px;
 }
 
 .promo__link {
@@ -98,7 +104,7 @@
   .promo__image {
     position: absolute;
     bottom: 0;
-    left: 0;
+    left: calc(50% - 354px);
     z-index: -1;
 
     margin: 0;
@@ -155,7 +161,7 @@
   }
 
   .promo__image {
-    left: 36.886%;
-    top: 3px;
+    left: 36.803%;
+    top: 0;
   }
 }
