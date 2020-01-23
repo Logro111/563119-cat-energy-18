@@ -1,5 +1,5 @@
 .example {
-  padding: 17px $mobile-center 37px;
+  padding: 16px $mobile-center 38px;
 
   @include font(14px, 18px);
   background-color: $light-grey;
@@ -11,7 +11,7 @@
 
 .example__description {
   margin: 0;
-  margin-bottom: 26px;
+  margin-bottom: 27px;
   padding-right: 2%;
 }
 
@@ -19,7 +19,7 @@
   display: flex;
   justify-content: space-between;
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 19px;
 }
 
 .example__result-list-wrapper {
@@ -51,6 +51,10 @@
   text-align: center;
 
   background-color: $light-grey;
+}
+
+.example__result-description--weight-loss {
+  padding: 0 12.904%;
 }
 
 .example__expenses {
@@ -111,6 +115,10 @@
 
   .example__result-description--time {
     width: 87.654%;
+  }
+
+  .example__result-description--weight-loss {
+    padding: 0;
   }
 
   .example__result {

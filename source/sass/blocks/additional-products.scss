@@ -66,6 +66,7 @@
 @media (min-width: $tablet-width) {
   .additional-products {
     padding: 0;
+    padding-bottom: 1px;
   }
 
   .additional-products__wrapper {
@@ -114,7 +115,7 @@
   }
 
   .additional-products__list {
-    margin-bottom: 70px;
+    margin-bottom: 69px;
   }
 
   .additional-products__gift {
