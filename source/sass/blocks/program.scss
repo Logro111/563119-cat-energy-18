@@ -6,13 +6,43 @@
   @include font(14px, 18px);
 
   background-color: $light-grey;
+
+  &::before {
+    content: "";
+
+    position: absolute;
+    top: 16px;
+    left: 4.643%;
+
+    display: block;
+    width: 68px;
+    height: 68px;
+
+    background-repeat: no-repeat;
+  }
+}
+
+.program--slim::before {
+  background-image: url("../img/icon-cat-slim.svg"),
+    radial-gradient(circle, $leaf-green 25px, transparent 26px);
+
+  background-size: 35px 49px, auto;
+  background-position: center 6px, 0 0;
+}
+
+.program--pro::before {
+  background-image: url("../img/icon-cat-pro.svg"),
+    radial-gradient(circle, $leaf-green 24px, transparent 25px);
+
+  background-size: 67px 28px, auto;
+  background-position: center, 0 0;
 }
 
 .program::after {
   content: "";
 
   position: absolute;
-  bottom: 55px;
+  bottom: 56px;
 
   display: block;
   height: 1px;
@@ -52,17 +82,67 @@
   color: $dark-text-color;
 
   @include link;
+
+  &::after {
+    content: "";
+
+    position: absolute;
+    bottom: 5px;
+    right: -45px;
+
+    display: block;
+    width: 34px;
+    height: 12px;
+
+    background-image: url("../img/icon-right-arrow-verylong.svg");
+    background-repeat: no-repeat;
+    background-position: -9px 0;
+  }
+}
+
+.program__link:active {
+  opacity: 0.3;
+}
+
+.program__link:focus::after,
+.program__link:hover::after {
+  background-position: 0 0;
 }
 
 @media (min-width: $tablet-width) {
   .program {
-    padding: 78px 39.972% 56px 7.345%;
+    padding: 78px 39.972% 56.6px 7.345%;
 
     @include font(16px, 24px);
+
+    &::before {
+      left: auto;
+      right: 3.955%;
+      top: 59px;
+
+      width: 268px;
+      height: 268px;
+    }
+
+    &::after {
+      display: none;
+    }
   }
 
-  .program::after {
-    display: none;
+  .program--slim::before {
+    background-image: url("../img/icon-cat-slim.svg"),
+      radial-gradient(circle, $leaf-green 100px, transparent 101px);
+
+    background-size: 141px 194px, auto;
+    background-position: center 21px, 0 0;
+  }
+
+  .program--pro::before {
+    background-image: url("../img/icon-cat-pro.svg"),
+      radial-gradient(circle, $leaf-green 100px, transparent 101px);
+
+    background-size: 268px 113px, auto;
+    background-position: center, 0 0;
   }
 
   .program--pro {
@@ -70,7 +150,7 @@
   }
 
   .program__title {
-    margin-bottom: 25px;
+    margin-bottom: 24px;
     padding: 0;
 
     @include font(36px, 37px);
@@ -82,6 +162,11 @@
 
   .program__link {
     @include font(20px, 20px);
+
+    &::after {
+      bottom: 8px;
+      right: -56px;
+    }
   }
 }
 
@@ -89,6 +174,31 @@
   .program {
     width: 46.722%;
     padding: 75px 4.263% 57px;
+
+    &::before {
+      left: 34px;
+      right: auto;
+      top: 30px;
+
+      width: 135px;
+      height: 135px;
+    }
+  }
+
+  .program--slim::before {
+    background-image: url("../img/icon-cat-slim.svg"),
+      radial-gradient(circle, $leaf-green 50px, transparent 51px);
+
+    background-size: 71px 97px, auto;
+    background-position: center 11px, 0 0;
+  }
+
+  .program--pro::before {
+    background-image: url("../img/icon-cat-pro.svg"),
+      radial-gradient(circle, $leaf-green 50px, transparent 51px);
+
+    background-size: 134px 57px, auto;
+    background-position: center, 0 0;
   }
 
   .program__title {

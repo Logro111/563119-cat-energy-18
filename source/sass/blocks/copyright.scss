@@ -10,8 +10,23 @@
   color: $light-text-color;
 }
 
-.copyright__icon-contents {
-  fill: $icon-color;
+.copyright__icon {
+  fill: #666666;
+  pointer-events: none;
+}
+
+.copyright__icon-link:focus .copyright__icon,
+.copyright__icon-link:hover .copyright__icon {
+  fill: $leaf-green;
+}
+
+.copyright__link:active,
+.copyright__icon-link:active .copyright__icon {
+  opacity: 0.3;
+}
+
+.copyright__icon-link:active .copyright__icon {
+  fill: $leaf-green;
 }
 
 @media (min-width: $tablet-width) {

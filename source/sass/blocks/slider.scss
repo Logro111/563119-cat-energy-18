@@ -1,6 +1,7 @@
 .slider__list {
   @include lists-reset;
-  margin-bottom: 40px;
+  margin-bottom: 41px;
+  overflow-x: hidden;
 }
 
 .slider__controls {
@@ -110,6 +111,7 @@
 
   .was {
     margin-left: auto;
+    padding-left: 0;
   }
 
   .slider__item--was {
@@ -163,6 +165,18 @@
     border-bottom: 1px dotted rgba($dark-text-color, 0.275);
   }
 
+  .was:focus,
+  .become:focus,
+  .was:hover,
+  .become:hover {
+    border-bottom: 1px solid rgba($dark-text-color, 0.4);
+  }
+
+  .was:active,
+  .become:active {
+    border-bottom: 0 none;
+  }
+
   .slider__scale {
     position: relative;
 
@@ -194,6 +208,16 @@
     border: 1px solid $pinkish-grey;
     border-radius: 50%;
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.15);
+  }
+
+  .slider__scale-marker:focus,
+  .slider__scale-marker:hover {
+    box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.25);
+  }
+
+  .slider__scale-marker:active {
+    border: 2px solid $leaf-green;
+    box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.3);
   }
 }
 
