@@ -4,8 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Главная</title>
-    <script src="js/picturefill.js"></script>
-    <link rel="stylesheet" href="css/style.css">
+    <script src="js/picturefill.min.js"></script>
+    <script src="js/svg4everybody.min.js"></script>
+    <script>svg4everybody();</script>
+    <link rel="preload" href="fonts/oswaldregular.woff2" as="font">
+    <link rel="preload" href="fonts/oswaldmedium.woff2" as="font">
+    <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body class="page">
     <header class="page__page-header page-header header--index">
@@ -190,21 +194,21 @@
           <li class="social-list__item">
             <a class="social-list__link" href="" aria-label="Cat energy в Вконтакте">
               <svg class="social-list__image social-list__image--vk" width="22" height="12">
-                <use xlink:href="img/sprite.svg#vk"></use>
+                <use xlink:href="img/sprite.svg#icon-vk"></use>
               </svg>
             </a>
           </li>
           <li class="social-list__item">
             <a class="social-list__link" href="" aria-label="Cat energy в Инстаграме">
               <svg class="social-list__image social-list__image--inst" width="17" height="17">
-                <use xlink:href="img/sprite.svg#inst"></use>
+                <use xlink:href="img/sprite.svg#icon-insta"></use>
               </svg>
             </a>
           </li>
           <li class="social-list__item">
             <a class="social-list__link" href="" aria-label="Cat energy в Фейсбуке">
               <svg class="social-list__image social-list__image--fb" width="10" height="19">
-                <use xlink:href="img/sprite.svg#fb"></use>
+                <use xlink:href="img/sprite.svg#icon-fb"></use>
               </svg>
             </a>
           </li>
@@ -213,12 +217,12 @@
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
           <a class="copyright__icon-link" href="https://htmlacademy.ru/intensive/adaptive">
             <svg class="copyright__icon" width="27" height="34">
-              <use xlink:href="img/sprite.svg#htmlacademy"></use>
+              <use xlink:href="img/sprite.svg#icon-htmlacademy"></use>
             </svg>
           </a>
         </div>
       </div>
     </footer>
-    <script src="js/scripts.js"></script>
+    <script src="js/scripts.min.js"></script>
   </body>
   </html>

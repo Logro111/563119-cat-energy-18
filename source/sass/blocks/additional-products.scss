@@ -11,7 +11,7 @@
 
   @include font(24px, 24px);
 
-  background-color: #ffffff;
+  background-color: white;
 }
 
 .additional-products__header {
@@ -47,7 +47,7 @@
   @include font(16px, 20px);
 
   text-align: center;
-  color: #ffffff;
+  color: white;
 
   background-image: url("../img/gift-photo-mobile@1x.jpg");
   background-repeat: no-repeat;
@@ -55,7 +55,8 @@
   background-position: 0 70%;
 }
 
-@media (min-resolution: $retina-dppx) {
+@media (min-resolution: $retina-dpi),
+  (min-resolution: $retina-dppx) {
   .additional-products__gift {
     background-image: url("../img/gift-photo-mobile@2x.jpg");
   }
@@ -150,7 +151,8 @@
     background-position: 0 50%;
   }
 
-  @media (min-resolution: $retina-dppx) {
+  @media (min-resolution: $retina-dpi),
+    (min-resolution: $retina-dppx) {
     .additional-products__gift {
       background-image: url("../img/gift-photo-tablet@2x.jpg");
     }
@@ -199,7 +201,8 @@
     background-image: url("../img/gift-photo-desktop@1x.jpg");
   }
 
-  @media (min-resolution: $retina-dppx) {
+  @media (min-resolution: $retina-dpi),
+    (min-resolution: $retina-dppx) {
     .additional-products__gift {
       background-image: url("../img/gift-photo-desktop@2x.jpg");
     }

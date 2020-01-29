@@ -7,6 +7,7 @@
     url("../fonts/oswaldregular.woff") format("woff");
   font-weight: normal;
   font-style: normal;
+  font-display: optional;
 }
 
 @font-face {
@@ -18,4 +19,5 @@
     url("../fonts/oswaldMedium.woff") format("woff");
   font-weight: 500;
   font-style: normal;
+  font-display: optional;
 }

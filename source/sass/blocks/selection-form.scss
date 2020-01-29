@@ -69,7 +69,7 @@
 
   max-width: 69.375%;
 
-  background-color: #ffffff;
+  background-color: white;
 }
 
 .selection-form__comment,
@@ -135,11 +135,17 @@
   border: 1px solid $pinkish-grey;
 }
 
-.selection-form__input-field:valid:focus,
-.selection-form__comment:valid:focus {
+.selection-form__input-field:valid:focus {
   padding-left: 4.643%;
 
   border: 2px solid $light-text-color;
+}
+
+.selection-form__comment:valid:focus {
+  border: 2px solid $light-text-color;
+  padding-right: 4.286%;
+  padding-left: 4.643%;
+  padding-top: 11px;
 }
 
 .selection-form__option-list {
@@ -190,12 +196,12 @@
 .selection-form__selection-option-label--checkbox:hover::before,
 .selection-form__selection-option-label--radio:focus::before,
 .selection-form__selection-option-label--radio:hover::before {
-  border: 1px solid #bababa;
+  border: 1px solid $option-label-hover;
 }
 
 .selection-form__selection-option-label--checkbox:active::before,
 .selection-form__selection-option-label--radio:active::before {
-  border: 1px solid #bababa;
+  border: 1px solid $option-label-hover;
   opacity: 0.3;
 }
 
@@ -229,7 +235,7 @@
 
 .selection-form__field-icon {
   position: absolute;
-  fill: #222222;
+  fill: $middle-text-color;
 }
 
 .selection-form__field-icon--mail {
@@ -247,11 +253,11 @@
 }
 
 .selection-form__input-field:invalid {
-  border: 2px solid #ff8282;
+  border: 2px solid $form-error;
 }
 
 .selection-form__input-field:invalid + .selection-form__field-icon {
-  fill: #ff8282;
+  fill: $form-error;
 }
 
 
@@ -333,6 +339,11 @@
   .selection-form__input-field:valid:focus,
   .selection-form__comment:valid:focus {
     padding-left: 2.857%;
+  }
+
+  .selection-form__comment:valid:focus {
+    padding-top: 12px;
+    padding-right: 3.016%;
   }
 
   .selection-form__comment {
@@ -456,9 +467,8 @@
     margin-bottom: 0;
   }
 
-  .selection-form__comment,
-  .selection-form__input-field {
-    padding: 7px 3.334% 10px;
+  .selection-form__comment {
+    padding-left: 17px;
   }
 
   .selection-form__field-group-wrapper--contacts {
@@ -531,6 +541,10 @@
 
   .selection-form__input-field:valid:focus,
   .selection-form__comment:valid:focus {
-    padding-left: 3.158%;
+    padding-left: 2.8%;
+  }
+
+  .selection-form__comment:valid:focus {
+    padding-left: 16px;
   }
 }
