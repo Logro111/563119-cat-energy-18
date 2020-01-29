@@ -135,11 +135,17 @@
   border: 1px solid $pinkish-grey;
 }
 
-.selection-form__input-field:valid:focus,
-.selection-form__comment:valid:focus {
+.selection-form__input-field:valid:focus {
   padding-left: 4.643%;
 
   border: 2px solid $light-text-color;
+}
+
+.selection-form__comment:valid:focus {
+  border: 2px solid $light-text-color;
+  padding-right: 4.286%;
+  padding-left: 4.643%;
+  padding-top: 11px;
 }
 
 .selection-form__option-list {
@@ -335,8 +341,9 @@
     padding-left: 2.857%;
   }
 
-  .selection-form__comment:focus {
+  .selection-form__comment:valid:focus {
     padding-top: 12px;
+    padding-right: 3.016%;
   }
 
   .selection-form__comment {
@@ -534,7 +541,7 @@
 
   .selection-form__input-field:valid:focus,
   .selection-form__comment:valid:focus {
-    padding-left: 3.158%;
+    padding-left: 2.8%;
   }
 
   .selection-form__comment:valid:focus {
