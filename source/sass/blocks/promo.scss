@@ -23,6 +23,7 @@
     height: 63.494%;
     width: 100%;
     background-image: url("../img/index-background-mobile@1x.jpg");
+    background-color: $leaf-green;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 0 center;
@@ -146,6 +147,13 @@
       left: auto;
       right: 0;
       z-index: 1;
+    }
+  }
+
+  @media (min-resolution: $retina-dpi),
+    (min-resolution: $retina-dppx) {
+    .promo::before {
+      background-image: url("../img/index-background-desktop@2x.jpg");
     }
   }
 

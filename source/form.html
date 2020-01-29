@@ -44,7 +44,7 @@
           <div class="selection-form__cat-info center">
             <fieldset class="selection-form__field-group">
               <div class="selection-form__field-group-wrapper">
-                <legend class="visually-hidden">Данные кота</legend>
+                <h2 class="visually-hidden">Данные кота</h2>
                 <label class="selection-form__input-field-label"><span class="selection-form__label-text">Имя:*</span>
                   <input class="selection-form__input-field" type="text" id="cat-name" name="cat-name" placeholder="Барсик" required>
                 </label>
@@ -57,7 +57,7 @@
               </div>
             </fieldset>
             <fieldset class="selection-form__field-group selection-form__field-group--desired-program">
-              <legend class="visually-hidden">Желаемая программа</legend>
+              <h2 class="visually-hidden">Желаемая программа</h2>
               <ul class="selection-form__option-list">
                 <li class="selection-form__option-item">
                   <input class="selection-form__selection-option visually-hidden selection-form__selection-option--radio" type="radio" id="losing-weight" name="program" value="losing-weight" checked>
@@ -77,9 +77,9 @@
           <fieldset class="selection-form__field-group">
             <header class="selection-form__field-group-header">
               <div class="selection-form__field-group-header-container center">
-                <legend class="selection-form__field-group-title">
+                <h2 class="selection-form__field-group-title">
                   Контактные данные (владельца кота)
-                </legend>
+                </h2>
               </div>
             </header>
             <div class="selection-form__field-group-wrapper selection-form__field-group-wrapper--contacts center">
@@ -100,17 +100,18 @@
           <fieldset class="selection-form__field-group">
             <header class="selection-form__field-group-header">
               <div class="selection-form__field-group-header-container center">
-                <legend class="selection-form__field-group-title">Комментарий</legend>
+                <h2 class="selection-form__field-group-title">Комментарий</h2>
               </div>
             </header>
             <div class="selection-form__field-group-wrapper center">
-              <textarea class="selection-form__comment" name="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
+              <label class="visually-hidden" for="comment">Ваш комментарий</label>
+              <textarea id="comment" class="selection-form__comment" name="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
             </div>
           </fieldset>
           <fieldset class="selection-form__field-group">
             <header class="selection-form__field-group-header selection-form__field-group-header--additionally">
               <div class="selection-form__field-group-header-container center">
-                <legend class="selection-form__field-group-title">Дополнительно</legend>
+                <h2 class="selection-form__field-group-title">Дополнительно</h2>
               </div>
             </header>
             <div class="selection-form__field-group-wrapper center">

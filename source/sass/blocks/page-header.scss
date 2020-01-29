@@ -43,7 +43,7 @@
 }
 
 @media (min-width: $desktop-width) {
-  .header--index {
+  .page-header--index {
     background-image: linear-gradient(to right, transparent 50%, #65a93a 50%);
   }
 
@@ -53,9 +53,5 @@
 
   .page-header__wrapper {
     padding-top: 57px;
-  }
-
-  .main-navigation {
-    z-index: 2;
   }
 }

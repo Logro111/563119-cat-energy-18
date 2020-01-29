@@ -46,9 +46,6 @@
   position: relative;
 
   margin-bottom: 34px;
-
-  @include font(24px, 24px);
-  text-transform: none;
 }
 
 .selection-form__field-group-header::after {
@@ -65,9 +62,16 @@
 }
 
 .selection-form__field-group-title {
+  display: inline-block;
+  margin: 0;
+  vertical-align: top;
   padding: 0 $mobile-center;
-
   max-width: 69.375%;
+
+  @include font(24px, 24px);
+  text-transform: none;
+  font-weight: normal;
+
 
   background-color: white;
 }
@@ -304,6 +308,12 @@
   .selection-form__field-group-header {
     margin-bottom: 77px;
     padding: 0;
+  }
+
+  .selection-form__field-group-title {
+    margin: 0;
+    padding: 0 40px 0 40px;
+    max-width: none;
 
     @include font(36px, 36px);
   }
@@ -315,11 +325,6 @@
   .selection-form__field-group-header::after {
     left: 0;
     top: 22px;
-  }
-
-  .selection-form__field-group-title {
-    padding: 0 40px 0 40px;
-    max-width: none;
   }
 
   .selection-form__comment,
