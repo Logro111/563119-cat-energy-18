@@ -7,7 +7,7 @@
   @include Oswald-font;
 
 
-  color: #ffffff;
+  color: white;
 
 
   &::before {
@@ -29,7 +29,8 @@
   }
 }
 
-@media (min-resolution: $retina-dppx) {
+@media (min-resolution: $retina-dpi),
+  (min-resolution: $retina-dppx) {
   .promo::before {
     background-image: url("../img/index-background-mobile@2x.jpg");
   }
@@ -56,6 +57,8 @@
 
 .promo__image {
   display: block;
+  width: 280px;
+  height: 270px;
   margin: 0 auto;
   margin-bottom: 3px;
 }
@@ -71,7 +74,7 @@
     padding: 0;
 
     @include font(20px, 20px);
-    color: #000000;
+    color: black;
 
     background-image: none;
 
@@ -107,6 +110,8 @@
     left: calc(50% - 354px);
     z-index: -1;
 
+    width: 709px;
+    height: auto;
     margin: 0;
     order: 1;
   }
@@ -163,5 +168,7 @@
   .promo__image {
     left: 36.803%;
     top: 0;
+
+    width: 552px;
   }
 }

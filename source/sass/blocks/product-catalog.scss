@@ -26,4 +26,22 @@
     flex-wrap: wrap;
     justify-content: space-between;
   }
+
+  .product-catalog__item {
+    margin-top: 58px;
+
+    &:nth-child(-n+2) {
+      margin-top: 0;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .product-catalog__item {
+    margin-top: 61px;
+
+    &:nth-child(-n+4) {
+      margin-top: 0;
+    }
+  }
 }
